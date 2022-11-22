@@ -21,4 +21,4 @@
 -Montserrat
 
 🔴Layout:🔴
-https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=32%3A4&t=LD9mPnCkO71Eleco-1
+https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=0%3A1&t=641uvfD6MGbsL62r-1
