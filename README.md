@@ -25,3 +25,6 @@ https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=0
 
 🔴Layout 2:🔴
 https://www.figma.com/file/gsXMWSd7XIiwSx0TgKInkB/Untitled?node-id=0%3A1&t=bMrnx5ogWNWOm1hU-1
+
+🔴Layout 4:🔴
+https://www.figma.com/file/LpuNKbdbsSKCqL7o8xBwiK/PROJETO-INTEGRADOR-G3?node-id=0%3A1&t=7xLDXrdFSt1mQtUQ-1
