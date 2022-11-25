@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background: #1C7A2B;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoTopo{
+    width: 85px;
+}
+.menuSelecionado{
+    background: #39FA5A;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.menuItens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menus{
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 0 20px;
+}
+
+.menuSelecionado{
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+.menuSelecionado:hover{
+    background: #166123;
+    color: #fff;
+}
+.menus:hover{
+    opacity: .7;
+}
