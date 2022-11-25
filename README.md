@@ -18,7 +18,7 @@
 
 🔴Fonte:🔴
 
-Montserrat
+-Montserrat
 
 🔴Layout:🔴
 https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=0%3A1&t=641uvfD6MGbsL62r-1
