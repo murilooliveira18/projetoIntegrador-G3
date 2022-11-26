@@ -137,3 +137,103 @@
     font-size: 40px;
 }
 
+.objetivoDaEducacao{
+    display: flex;
+    justify-content: center;
+}
+
+.listaObjetivos{
+    color: #166123;
+    font-size: 26px;
+    padding: 20px 0px;
+}
+
+.tituloEmpresas{
+    color: #166123;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.empresasParceiras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.seta {
+    width: 20px;
+    height: 30px;
+}
+
+.tituloApoiador{
+    color: #166123;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.cadastrarApoiador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 130px;
+    margin-bottom: 100px;
+}
+
+.escreverEmail{
+    width: 70%;
+    padding: 20px;
+    border: none;
+    background: #D9D9D9;
+}
+
+.inscreverSe{
+    width: 30%;
+    padding: 20px;
+    background: #39FA5A;
+    color: #fff;
+    border: 1px solid #39FA5A;
+}
+
+.rodape{
+    background: #1C7A2B;
+    padding: 40px 0px;
+}
+.infos{
+    display: flex;
+    justify-content: center;
+}
+.infosExtras{
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.copy{
+    color: #fff;
+    display: flex;
+    padding-top: 50px;
+    font-weight: lighter;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.textoCopy{
+    padding-right: 50px;
+}
+
+.redesSociais{
+    display: flex;
+    align-items: center;
+}
+
+.iconeYoutube{
+    width: 25px;
+    padding: 0 5px;
+}
+.iconesRedeSocial{
+    width: 20px;
+    padding: 0 5px;
+}
