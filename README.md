@@ -23,6 +23,18 @@
 🔴Layout:🔴
 https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=0%3A1&t=641uvfD6MGbsL62r-1
 
+🔴Layout 2:🔴
+https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=89%3A2&t=zMBHwP23FLIcfRvR-1
+
+🔴Layout 4:🔴
+https://www.figma.com/file/LpuNKbdbsSKCqL7o8xBwiK/PROJETO-INTEGRADOR-G3?node-id=0%3A1&t=7xLDXrdFSt1mQtUQ-1
+
+🔴Layout 6:🔴
+https://www.figma.com/file/gsXMWSd7XIiwSx0TgKInkB/Untitled?node-id=0%3A1&t=bMrnx5ogWNWOm1hU-1
+
+🔴Layout 7:🔴
+https://www.figma.com/file/xXywGJfNszjjhOZ7mpjapN/projetoIntegrador-G3?node-id=199%3A4&t=wfDJKWWpSc1TDOQG-4
+
 <<<<<<< HEAD
 🔴Aba Contatos:🔴
 https://www.figma.com/file/gsXMWSd7XIiwSx0TgKInkB/Untitled?node-id=0%3A1&t=bMrnx5ogWNWOm1hU-1
