@@ -82,10 +82,37 @@
     padding: 50px 0;
     font-size: 40px;
 }
+
+.tituloNovidades{
+    color: #166123;
+    text-align: center;
+    padding-right: 50px 0px;
+    font-size: 40px;
+}
 .impactosCausados{
     padding: 100px 0px;
     display: flex;
     justify-content: center;
+}
+
+.novidades{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+.faleConosco{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 0px 130px;
+    margin-bottom: 10px;
+}
+
+.textoNovidadeds{
+    width: 50%;
+    padding-right: 50px;
+    font-size: 24px;
+    color: #417A4A;
 }
 .textoImpactos{
     width: 50%;
@@ -96,10 +123,20 @@
 .imagensImpactos{
     width: 30%;
 }
+
+imagensNovidades{
+    width: 30%;
+}
+
 .bannerImpactos:first-child{
     padding-top: 0;
 }
 .bannerImpactos{
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bannerNovidades{
     padding: 20px 0;
     width: 100%;
 }
@@ -173,6 +210,12 @@
     padding: 50px 0;
     font-size: 40px;
 }
+.faleConosco{
+    color: #166123;
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
 
 .cadastrarApoiador{
     display: flex;
@@ -185,6 +228,19 @@
 .escreverEmail{
     width: 70%;
     padding: 20px;
+    border: none;
+    background: #D9D9D9;
+}
+.escrever{
+    width: 50%;
+    padding: 20px;
+    border: none;
+    background: #D9D9D9;
+}
+
+.mensage{
+    width: 80%;
+    padding: 60px;
     border: none;
     background: #D9D9D9;
 }
@@ -223,6 +279,11 @@
 .textoCopy{
     padding-right: 50px;
 }
+
+.fale{
+    padding-right: 50px;
+}
+
 
 .redesSociais{
     display: flex;
