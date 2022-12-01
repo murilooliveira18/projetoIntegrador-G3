@@ -1,0 +1,14 @@
+.cabecalho{
+    background-color: rgb(3, 97, 3) ;
+
+}
+
+.menudeopcoes{
+    display: flex;
+    justify-content:right;
+    margin: 1px;
+    padding: 20px;
+
+    
+    
+}

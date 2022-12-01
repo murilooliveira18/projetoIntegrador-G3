@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylea.css">
     <title>Seja um Apoiador</title>
 </head>
 <body>
-    <header>
-        <img src="assets/logo Biome.jpg" alt="logo do projeto">
+    <header class="cabecalho">
+        <img src="assets/logo-biome.ico" alt="logo do projeto">
         <br>
-        <nav>
+        <nav class="menudeopcoes">
+            <a href="Home.html"></a>
             <button id="text">Quem Somos</button>
+            <a href="Materiais.html"></a>
             <button id="text">Materiais</button>
+            <a href="Ecopontos.html"></a>
             <button id="text">Ecopontos</button>
             <button id="text">Seja um Apoiador</button>
+            <a href="Linksuteis.html"></a>
             <button id="text">Links Uteis</button>
+            <a href="contato.html"></a>
             <button id="text">Contato</button>
         </nav>
     </header>
@@ -28,26 +34,44 @@
         </h1> 
         <section>
         <form action="/">
-
-            
             <fieldset>
-                <input type="text" placeholder="Nome Completo / Razão Social: ">
+                <label for="nome">
+                    Nome Completo / Razão Social: 
+                <br>
+                <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username">
+                </label>
             </fieldset>
             <fieldset>
-                <input type="number" placeholder="CPF / CNPJ: ">
+                <label for="documento">
+                    CPF / CNPJ: 
+                <br>
+                <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc">
+                </label>
             </fieldset>
             <fieldset>
-                <input type="tel" placeholder="DDD + Celular:" >
+                <label for="contato">
+                    DDD + Celular
+                <br>
+                <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" >
+                </label>
             </fieldset>
             <fieldset>
-                <input type="email" placeholder="E-mail:" >
+                <label for="email">
+                    E-mail:
+                <br>
+                <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto">
+                </label>
             </fieldset>
             <fieldset>
-                <input type="text" placeholder="Cidade:" >
+                <label for="cidade">
+                    Cidade: 
+                <br>
+                <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" >
+                </label>
             </fieldset>
                 <br>
                 <button type="submit">
-                    SEND
+                    ENVIAR
                 </button>
             </form>
         </section>
@@ -55,10 +79,12 @@
         <h2>
             EMPRESAS PARCEIRAS 
         </h2>
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
+        <img src="assets/Vector 3.png" alt="seta esquerda">    
+        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
+        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
+        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
+        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
+        <img src="assets/Vector 3 (1).png" alt="seta direita">
     </main>
     <footer> 
         <span>
