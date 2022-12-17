@@ -36,51 +36,77 @@
         <h1>
             SEJA UM APOIADOR BIOME
         </h1> 
-        <section>
-        <form action="/">
-
-            
-            <fieldset>
-                <input type="text" placeholder="Nome Completo / Razão Social: ">
-            </fieldset>
-            <fieldset>
-                <input type="number" placeholder="CPF / CNPJ: ">
-            </fieldset>
-            <fieldset>
-                <input type="tel" placeholder="DDD + Celular:" >
-            </fieldset>
-            <fieldset>
-                <input type="email" placeholder="E-mail:" >
-            </fieldset>
-            <fieldset>
-                <input type="text" placeholder="Cidade:" >
-            </fieldset>
-                <br>
-                <button type="submit">
-                    SEND
-                </button>
-            </form>
-        </section>
-        <img src="assets/Recilygroup.jpg" alt="grupo">
-        <h2>
-            EMPRESAS PARCEIRAS 
-        </h2>
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
-        <img src="assets/prov_banner2.jpg" alt="espaço para banner">
+        <div>
+            <form action="/">
+                <fieldset>
+                    <label for="nome">
+                        Nome Completo / Razão Social: 
+                    <br>
+                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="documento">
+                        CPF / CNPJ: 
+                    <br>
+                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="contato">
+                        DDD + Celular
+                    <br>
+                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" >
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="email">
+                        E-mail:
+                    <br>
+                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="cidade">
+                        Cidade: 
+                    <br>
+                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" >
+                    </label>
+                </fieldset>
+                    <br>
+                    <button type="submit">
+                        ENVIAR
+                    </button>
+                </form>
+        </div>
+        <div>
+        <img src="imagens/banner-beneficios.png" alt="banner-beneficios" class="bannerBeneficios">
+        </div>
+        <h1 class="tituloEmpresas">
+            EMPRESAS PARCEIRAS
+        </h1>
+        <div class="empresasParceiras">
+            <img src="imagens/Vector 3.png" alt="" class="seta">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira1">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira2">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira3">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira4">
+            <img src="imagens/Vector 3 (1).png" alt="" class="seta">
+        </div>
     </main>
-    <footer> 
-        <span>
-            Politica de Privacidade | Informações | Contato | Seja um Apoiador | Links Úteis
-        </span>
-        <p>
-        @ 2022 Biome. Todos os direitos reservados. 
-            <img src="" alt="logo facebook">
-            <img src="" alt="logo twitter">
-            <img src="" alt="logo youtube">
-            <img src="" alt="likedin">
-        </p>
+    <footer class="rodape">
+        <div class="infos">
+            <span class="infosExtras">Política de privacidade | Informações | Contato | Seja um apoiador | Links utéis</span>
+        </div>
+        <div class="copy">
+            <p class="textoCopy">© 2022 Biome. Todos os direitos reservados.</p>
+            <div class="redesSociais">
+                <img src="imagens/instagram 1.png" alt="logo-instagram" class="iconesRedeSocial">
+                <img src="imagens/twitter 1.png" alt="logo-twitter" class="iconesRedeSocial">
+                <img src="imagens/youtube 1.png" alt="logo-youtube" class="iconeYoutube">
+                <img src="imagens/logotipo-do-linkedin 1.png" alt="logo-linkedin" class="iconesRedeSocial">
+            </div>
+        </div>
     </footer> 
 </body>
 </html>
