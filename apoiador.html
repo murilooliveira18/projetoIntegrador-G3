@@ -4,121 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylea.css">
+    <title>Biome - Seja um Apoiador</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Seja um Apoiador</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="assets/logo-biome.ico" alt="logo do projeto">
-        <br>
-        <nav class="menudeopcoes">
-            <ul>    
-                <li>
-                    <a href="index.html">
-                        Quem Somos
-                    </a>
-                </li>
-                <li>
-                    <a href="telamaterias.html">
-                        Materias
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                    Ecopontos
-                    </a>
-                </li>
-                <li>
-                    <a href="apoiador.html">
-                    Seja um Apoiador
-                </a>
-                </li>
-                <li>
-                    <a href="links.html">
-                    Links Úteis
-                    </a>
-                </li>
-                <li>
-                    <a href="contato.html">
-                    Contato
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <div class="menu">
+            <img src="imagens/biome-logo.png" alt="logo-biome" class="logoTopo">
+            <div class="menuItens">
+                <ul>
+                    <li class="menus"><a href="index.html">Quem Somos</a></li>
+                </ul>
+                 <ul>
+                    <li class="menus">Materiais</li>
+                </ul>
+                <ul>
+                    <li class="menus">Ecopontos</li>
+                </ul>
+                <ul>
+                    <li class="menuSelecionado">Seja um apoiador</li>
+                </ul>
+                <ul>
+                    <li class="menus">Links utéis</li>
+                </ul>
+                <ul>
+                    <li class="menus"><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <img src="imagens/banner-teste.png" alt="banner-principal" class="bannerPrincipal">
     </header>
-           <img src="assets/Tipos-de-Parcerias.png" alt="foto parceria">
     <main>
-        <h1>
-            <strong>
+        <h1 class="tituloCadastro" > 
             SEJA UM APOIADOR BIOME
-            </strong>
         </h1> 
-        <section>
-        <form action="/">
-            <fieldset>
-                <label for="nome">
-                    Nome Completo / Razão Social: 
-                <br>
-                <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username">
-                </label>
-            </fieldset>
-            <fieldset>
-                <label for="documento">
-                    CPF / CNPJ: 
-                <br>
-                <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc">
-                </label>
-            </fieldset>
-            <fieldset>
-                <label for="contato">
-                    DDD + Celular
-                <br>
-                <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" >
-                </label>
-            </fieldset>
-            <fieldset>
-                <label for="email">
-                    E-mail:
-                <br>
-                <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto">
-                </label>
-            </fieldset>
-            <fieldset>
-                <label for="cidade">
-                    Cidade: 
-                <br>
-                <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" >
-                </label>
-            </fieldset>
-                <br>
-                <button type="submit">
-                    ENVIAR
-                </button>
-            </form>
-        </section>
-        <img src="assets/Recilygroup.jpg" alt="grupo">
-        <h2>
-            EMPRESAS PARCEIRAS 
-        </h2>
-        <img src="assets/Vector 3.png" alt="seta esquerda">    
-        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
-        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
-        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
-        <img src="assets/prov_banneremp.jpg" alt="empresa parceira">
-        <img src="assets/Vector 3 (1).png" alt="seta direita">
+        <div class="formularioCadastro">
+            <form action="/">
+                <fieldset>
+                    <label for="nome">
+                        Nome Completo / Razão Social: 
+                    <br>
+                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="documento">
+                        CPF / CNPJ: 
+                    <br>
+                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="contato">
+                        DDD + Celular
+                    <br>
+                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" >
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="email">
+                        E-mail:
+                    <br>
+                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="cidade">
+                        Cidade: 
+                    <br>
+                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" >
+                    </label>
+                </fieldset>
+                    <br>
+                    <button type="submit" class="botaoEnviar">
+                        ENVIAR
+                    </button>
+                </form>
+        </div>
+        <div class="imagemParceria">
+        <img src="imagens/Recilygroup.jpg" alt="fotoParceria" class="fotoParceria">
+        </div>
+        <h1 class="tituloEmpresas">
+            EMPRESAS PARCEIRAS
+        </h1>
+        <div class="empresasParceiras">
+            <img src="imagens/Vector 3.png" alt="" class="seta">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira1">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira2">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira3">
+            <img src="imagens/banner-empresas.png" alt="empresa-parceira4">
+            <img src="imagens/Vector 3 (1).png" alt="" class="seta">
+        </div>
     </main>
-    <footer> 
-        <span>
-            Politica de Privacidade | Informações | Contato | Seja um Apoiador | Links Úteis
-        </span>
-        <p>
-        @ 2022 Biome. Todos os direitos reservados. <br>
-            <img src="assets/instagram 1.png" alt="logo instagram">
-            <img src="assets/twitter 1.png" alt="logo twitter">
-            <img src="assets/youtube 1.png" alt="logo youtube">
-            <img src="assets/logotipo-do-linkedin 1.png" alt="likedin">
-        </p>
+    <footer class="rodape">
+        <div class="infos">
+            <span class="infosExtras">Política de privacidade | Informações | Contato | Seja um apoiador | Links utéis</span>
+        </div>
+        <div class="copy">
+            <p class="textoCopy">© 2022 Biome. Todos os direitos reservados.</p>
+            <div class="redesSociais">
+                <img src="imagens/instagram 1.png" alt="logo-instagram" class="iconesRedeSocial">
+                <img src="imagens/twitter 1.png" alt="logo-twitter" class="iconesRedeSocial">
+                <img src="imagens/youtube 1.png" alt="logo-youtube" class="iconeYoutube">
+                <img src="imagens/logotipo-do-linkedin 1.png" alt="logo-linkedin" class="iconesRedeSocial">
+            </div>
+        </div>
     </footer> 
 </body>
 </html>
