@@ -1,0 +1,124 @@
+.materiais_body {
+    background-color: #D9D9D9;
+    height: 100vh;
+}
+
+.header_menu {
+    background: #1C7A2B;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    
+}
+
+.LogoTopo {
+    width: 85px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menus:hover, .menu_selecionado:hover {
+    scale: 1.1;
+    transition: all 0.4s ease-in-out;
+  }
+
+a:hover {
+    color: #39fa5a;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding-left: 16px;
+    list-style-type: none;
+  }
+
+.materiais_main {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 250px;
+}
+
+
+.menu_selecionado{
+    background: #39FA5A;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.materiais_main_title {
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+    color: #166123;
+}
+
+.materiais_main_subtitle {
+    text-align: center;
+    color: #166123;
+}
+
+aquiii
+
+
+
+.materiais_secao {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  
+.materiais_main_subtitle_papel, .materiais_main_subtitle_vidro, .materiais_main_subtitle_plastico, .materiais_main_subtitle_metal, .materiais_main_subtitle_organico, .materiais_main_subtitle_moveis {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-materiais {
+    background: #1C7A2B;
+    padding: 10px 30px;
+    color: white;
+}
+.footer_texto_politica {
+    text-align: center;
+}
+
+.footer_direitos_links {
+    align-items: center;
+    display: flex;
+    display: flex;
+    justify-content:center
+  
+  
+
+}
