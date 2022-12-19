@@ -334,3 +334,8 @@ imagensNovidades{
     justify-content: center;
     padding: 60px;
 }
+
+.botaoFormulario{
+    display: flex;
+    justify-content: center;
+}
