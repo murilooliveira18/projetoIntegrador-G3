@@ -4,3 +4,353 @@
     display: flex;
     gap: 5rem;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  *{
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .menu{
+      background: #1C7A2B;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .logoTopo{
+      width: 85px;
+  }
+  .menuSelecionado{
+      background: #39FA5A;
+      border-radius: 30px;
+      padding: 15px;
+  }
+  
+  .menuItens{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .menus{
+      list-style: none;
+      color: #fff;
+      cursor: pointer;
+      transition: all .3s;
+      padding: 0 20px;
+  }
+  
+  .menus > a{
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .menuSelecionado{
+      list-style: none;
+      color: #fff;
+      cursor: pointer;
+      transition: all .3s;
+  }
+  .menuSelecionado:hover{
+      background: #166123;
+      color: #fff;
+  }
+  .menus:hover{
+      opacity: .7;
+  }
+  
+  .bannerPrincipal{
+      width: 100%;
+  }
+  
+  .tituloProjeto{
+      color: #166123;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  
+  .conhecaNossoProjeto{
+      padding: 100px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .bannerConhecaNossoProjeto{
+      width: 40%;
+      padding: 0 30px;
+  }
+  
+  .textoConhecaNossoProjeto{
+      width: 40%;
+      font-size: 24px;
+      color: #417A4A;
+      text-align: justify;
+  }
+  .tituloImpactos{
+      color: #166123;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  
+  .tituloNovidades{
+      color: #166123;
+      text-align: center;
+      padding-right: 50px 0px;
+      font-size: 40px;
+  }
+  .impactosCausados{
+      padding: 100px 0px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .novidades{
+      padding: 100px 0px;
+      display: flex;
+      justify-content: center;
+  }
+  .faleConosco{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      padding: 0px 130px;
+      margin-bottom: 10px;
+  }
+  
+  .textoNovidadeds{
+      width: 50%;
+      padding-right: 50px;
+      font-size: 24px;
+      color: #417A4A;
+  }
+  .textoImpactos{
+      width: 50%;
+      padding-right: 50px;
+      font-size: 24px;
+      color: #417A4A;
+      text-align: justify;
+  }
+  .imagensImpactos{
+      width: 30%;
+  }
+  
+  .imagensNovidades{
+      width: 30%;
+  }
+  
+  .bannerImpactos:first-child{
+      padding-top: 0;
+  }
+  .bannerImpactos{
+      padding: 20px 0;
+      width: 100%;
+  }
+  
+  .bannerNovidades{
+      padding: 20px 0;
+      width: 100%;
+  }
+  
+  .tituloBeneficios{
+      color: #166123;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  
+  .beneficiosDaEducacao{
+      padding: 100px 80px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .textoBeneficios{
+      color: #166123;
+      font-size: 24px;
+      text-align: justify;
+  }
+  
+  .imagemBeneficios{
+      display: flex;
+      justify-content: center;
+  }
+  .bannerBeneficios{
+      width: 90%;
+  }
+  
+  .tituloObjetivos{
+      color: #166123;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  
+  .objetivoDaEducacao{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .listaObjetivos{
+      color: #166123;
+      font-size: 26px;
+      padding: 20px 0px;
+  }
+  
+  .tituloEmpresas{
+      color: #166123;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  
+  .empresasParceiras{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 80px;
+  }
+  
+  .seta {
+      width: 20px;
+      height: 30px;
+  }
+  
+  .tituloApoiador{
+      color: #166123;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  .faleConosco{
+      color: #166123;
+      text-align: center;
+      padding: 50px;
+      font-size: 40px;
+  }
+  
+  .cadastrarApoiador{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 130px;
+      margin-bottom: 100px;
+  }
+  
+  .escreverEmail{
+      width: 70%;
+      padding: 20px;
+      border: none;
+      background: #D9D9D9;
+  }
+  .escrever{
+      width: 50%;
+      padding: 20px;
+      border: none;
+      background: #D9D9D9;
+  }
+  
+  .mensage{
+      width: 80%;
+      padding: 60px;
+      border: none;
+      background: #D9D9D9;
+  }
+  
+  .inscreverSe{
+      width: 30%;
+      padding: 20px;
+      background: #39FA5A;
+      color: #fff;
+      border: 1px solid #39FA5A;
+  }
+  
+  .rodape{
+      background: #1C7A2B;
+      padding: 40px 0px;
+  }
+  .infos{
+      display: flex;
+      justify-content: center;
+  }
+  .infosExtras{
+      color: #fff;
+      font-size: 24px;
+      font-weight: lighter;
+  }
+  
+  .copy{
+      color: #fff;
+      display: flex;
+      padding-top: 50px;
+      font-weight: lighter;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+  }
+  .textoCopy{
+      padding-right: 50px;
+  }
+  
+  .fale{
+      padding-right: 50px;
+  }
+  
+  
+  .redesSociais{
+      display: flex;
+      align-items: center;
+  }
+  
+  .iconeYoutube{
+      width: 25px;
+      padding: 0 5px;
+  }
+  .iconesRedeSocial{
+      width: 20px;
+      padding: 0 5px;
+  }
+  .tituloForm{
+      display: flex;
+      justify-content: center;
+      color: #166123;
+      padding: 50px 0;
+      font-size: 40px;
+  }
+  .formCadastro{
+      display: flex;
+      justify-content: center;
+      padding: 0px 100px;
+      margin-bottom: 10px;
+  }
+  .dados{
+      width: 450px;
+      padding: 15px;
+      border:none;
+      background: #D9D9D9;
+  }
+  .botaoEnviar{
+      padding: 20px;
+      background: #39FA5A;
+      color: #fff;
+      border: 1px solid #39FA5A;
+  }
+  .imagemParceria{
+      display: flex;
+      justify-content: center;
+      padding: 60px;
+  }
+  .formBotao{
+      display: flex;
+      justify-content: center;
+  }
+  .formDados{
+      padding: 10px;
+  }
+  .botaoFormulario{
+      display: flex;
+      justify-content: center;
+  }
