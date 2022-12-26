@@ -4,7 +4,10 @@
     margin: 0;
     padding: 0;
 }
-
+header{
+    position: fixed;
+    width: 100%;
+}
 .menu{
     background: #1C7A2B;
     padding: 10px 30px;
@@ -260,6 +263,7 @@
     background: #39FA5A;
     color: #fff;
     border: 1px solid #39FA5A;
+    cursor: pointer;
 }
 
 .rodape{
@@ -274,6 +278,7 @@
     color: #fff;
     font-size: 24px;
     font-weight: lighter;
+    cursor: pointer;
 }
 
 .copy{
@@ -293,13 +298,16 @@
     padding-right: 50px;
 }
 
-
+img.iconesRedeSocial{
+    cursor: pointer;
+}
 .redesSociais{
     display: flex;
     align-items: center;
 }
 
 .iconeYoutube{
+    cursor: pointer;
     width: 25px;
     padding: 0 5px;
 }
