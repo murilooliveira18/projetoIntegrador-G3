@@ -10,36 +10,10 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <img src="imagens/biome-logo.png" alt="logo-biome" class="logoTopo">
-            <div class="menuItens">
-                <ul>
-                    <li class="menus"><a href="index.html">Quem Somos</a></li>
-                </ul>
-                 <ul>
-                    <li class="menus">Materiais</li>
-                </ul>
-                <ul>
-                    <li class="menus">Ecopontos</li>
-                </ul>
-                <ul>
-                    <li class="menuSelecionado">Seja um apoiador</li>
-                </ul>
-                <ul>
-                    <li class="menus">Links utéis</li>
-                </ul>
-                <ul>
-                    <li class="menus"><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="bannerPrincipal">
-            <img src="imagens/banner-teste.png"  alt="banner-principal" >
-        </div>
     </header>
     <main>
         <h1 class="tituloForm"> 
-            SEJA UM APOIADOR BIOME
+            SEJA UM APOIADOR BIOME 
         </h1> 
         <div class="formCadastro">
             <form action="/">
@@ -48,13 +22,15 @@
                         NOME COMPLETO / RAZÃO SOCIAL
                     </label><br>
                     <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados required">
-                    <span class="span-required"> *Nome deve conter mínimo 6 caracteres* </span>
+                    <br>
+                    <span class="span-required"> * Nome deve conter no mínimo 6 caracteres * </span>
                 </div>
                 <div class="formDados">
                     <label for="documento">
                         CPF / CNPJ
                     </label><br>
                     <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc" class="dados required">
+                    <br>
                     <span class="span-required"> Digite apenas números </span>
                 </div>
                 <div class="formDados">
@@ -62,6 +38,7 @@
                         DDD + CELULAR
                     </label><br>
                     <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" >
+                    <br>
                     <span class="span-required"> Digite apenas números </span>
                 </div>
                 <div class="formDados">
@@ -69,6 +46,7 @@
                         E-MAIL
                     </label><br>
                     <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto" class="dados required">
+                    <br>
                     <span class="span-required"> Digite um email válido </span>
                 </div>
                 <div class="formDados">
@@ -76,11 +54,23 @@
                         CIDADE
                     </label><br>
                     <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required" >
-                    <span class="span-required"> Campo Obrigatório </span>
-                </div>
                     <br>
-                <div class="formBotao">
-                    <button type="submit" class="botaoEnviar">
+                    <span class="span-required"> * Campo Obrigatório * </span>
+                </div>
+                <p>Ao clicar em ENVIAR você concorda com nossos termos de privacidade e aceita que entramos em contato para futuras colaborações.</p>
+                <div class="box-select">
+                    <div>
+                        <input type="radio" id="S" value="S" name="termoAceite">
+                        <label for="S"> Concordo </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="N" value="N" name="termoAceite">
+                        <label for="N">  Não Concordo  </label>
+                    </div>
+                </div>
+                <br>
+                <div class="div_formBotao">
+                    <button type="submit" class="formBotao">
                         ENVIAR
                     </button>
                 </div>
@@ -124,7 +114,13 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 
-
-
+function nameValidation(){
+    if (campos[0].value.length < 6) 
+    {
+        console.log("Nome deve ter minimo 6 caracteres")
+    } else {
+        console.log("validado nome")
+    }
+}
 </script>
 </html>
