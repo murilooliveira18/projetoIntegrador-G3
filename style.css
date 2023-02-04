@@ -8,6 +8,7 @@ header{
     position: fixed;
     width: 100%;
 }
+
 .menu{
     background: #1C7A2B;
     padding: 10px 30px;
@@ -390,6 +391,8 @@ img.iconesRedeSocial{
 .div-imagemTopo{
     display: flex;
     justify-content: center;
+    position:relative;
+
 }
 
 .imagemTopo{
