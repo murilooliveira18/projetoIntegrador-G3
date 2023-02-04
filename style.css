@@ -221,6 +221,12 @@ header{
     padding: 0px 80px;
 }
 
+.logo-empresasParceira{
+    width: 130px;
+    border: 10px;
+    cursor: pointer;
+}
+
 .seta {
     width: 20px;
     height: 30px;
@@ -391,8 +397,6 @@ img.iconesRedeSocial{
 .div-imagemTopo{
     display: flex;
     justify-content: center;
-    position:relative;
-
 }
 
 .imagemTopo{
@@ -406,6 +410,7 @@ img.iconesRedeSocial{
 .div_formBotao{
     display: flex;
     justify-content: center;
+
 }
 
 
