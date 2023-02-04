@@ -69,7 +69,7 @@ header{
 }
 
 .conhecaNossoProjeto{
-    padding: 100px 10px;
+    padding: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ header{
 }
 
 .textoConhecaNossoProjeto{
-    width: 40%;
+    width: 75%;
     font-size: 24px;
     color: #417A4A;
     text-align: justify;
@@ -92,7 +92,9 @@ header{
     padding: 50px 0;
     font-size: 40px;
 }
-
+.topicosImpactos , .topicosBeneficios{
+    padding: 20px 0px;
+}
 .tituloNovidades{
     color: #166123;
     text-align: center;
@@ -169,6 +171,13 @@ header{
     color: #166123;
     font-size: 24px;
     text-align: justify;
+}
+
+.textoEducacaoAmbiental{
+    color: #166123;
+    font-size: 24px;
+    text-align: justify;
+    padding: 80px;
 }
 
 .imagemBeneficios{
