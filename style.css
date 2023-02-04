@@ -378,6 +378,19 @@ img.iconesRedeSocial{
     margin: 20px;
 }
 
+.div-imagemTopo{
+    display: flex;
+    justify-content: center;
+}
+
+.imagemTopo{
+    border: thin solid;
+    padding: 10px;
+    border-radius: 100px;
+    width: 100%;
+    height: 460px;
+}
+
 .div_formBotao{
     display: flex;
     justify-content: center;

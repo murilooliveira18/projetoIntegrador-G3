@@ -10,8 +10,34 @@
 </head>
 <body>
     <header>
+        <div class="menu">
+            <a href="apoiador.html"><img src="imagens/biome-logo.png" alt="logo-biome" class="logoTopo"></a>
+            <nav class="menuItens">
+                <ul>
+                    <li class="menus"><a href="index.html">Quem Somos</a></li>
+                </ul>
+                 <ul>
+                    <li class="menus">Materiais</li>
+                </ul>
+                <ul>
+                    <li class="menus">Ecopontos</li>
+                </ul>
+                <ul>
+                    <li class="menuSelecionado">Seja um apoiador</li>
+                </ul>
+                <ul>
+                    <li class="menus">Links utéis</li>
+                </ul>
+                <ul>
+                    <li class="menus"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
+        <div class="div-imagemTopo" >
+        <img src="imagens/imagemTopo.jpg"   alt="imagem do topo" class="imagemTopo" >
+        </div>
         <h1 class="tituloForm"> 
             SEJA UM APOIADOR BIOME 
         </h1> 
@@ -54,7 +80,7 @@
                     <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required">
                 </div>    
                 <div class="div_formBotao">
-                    <button type="submit" class="formBotao">
+                    <button type="submit" id="submit" class="formBotao">
                         ENVIAR
                     </button>
                 </div>
@@ -93,21 +119,35 @@
 </body>
 <script>
 
-const form = document.getElementById('formCadastro');
-const campos = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
+
+const nome = document.getElementById("nome")
+const cpf = document.getElementById("cpf")
+const cel = document.getElementById("cel")
+const email = document.getElementById("email")
+const cidade = document.getElementById("cidade")
+
+const form = document.getElementById("submit");
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/ ;
-const btnEnviar = document.getElementsByClassName('formBotao');
 
 
-form.addEventListener('submit', (e) => {
+
+form.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('oi')
-   // nameValidation();
-    //cpfValidate();
-    //emailValidate();
-    
+    nameValidation();
+    cpfValidate();
+    emailValidate();
 });
+
+
+function resetForm(){
+    nome.value = '';
+    cpf.value = '';
+    cel.value = '';
+    email.value ='';
+    cidade.value='';
+}
 
 function setError(index){
  campos[index].style.border='3px solid #c63636';
