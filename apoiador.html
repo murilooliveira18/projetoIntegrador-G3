@@ -16,12 +16,12 @@
             SEJA UM APOIADOR BIOME 
         </h1> 
         <div class="formCadastro">
-            <form action="/">
+            <form action="">
                 <div class="formDados">
                     <label for="nome">
                         NOME COMPLETO / RAZÃO SOCIAL
                     </label><br>
-                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados required">
+                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados required" oninput="nameValidation()">
                     <br>
                     <span class="span-required"> * Nome deve conter no mínimo 6 caracteres * </span>
                 </div>
@@ -29,7 +29,7 @@
                     <label for="documento">
                         CPF / CNPJ
                     </label><br>
-                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc" class="dados required">
+                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc" class="dados required" oninput="cpfValidate()">
                     <br>
                     <span class="span-required"> Digite apenas números </span>
                 </div>
@@ -38,14 +38,12 @@
                         DDD + CELULAR
                     </label><br>
                     <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" >
-                    <br>
-                    <span class="span-required"> Digite apenas números </span>
                 </div>
                 <div class="formDados">
                     <label for="email">
                         E-MAIL
                     </label><br>
-                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto" class="dados required">
+                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto" class="dados required" oninput="emailValidate()">
                     <br>
                     <span class="span-required"> Digite um email válido </span>
                 </div>
@@ -53,22 +51,8 @@
                     <label for="cidade">
                         CIDADE
                     </label><br>
-                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required" >
-                    <br>
-                    <span class="span-required"> * Campo Obrigatório * </span>
-                </div>
-                <p>Ao clicar em ENVIAR você concorda com nossos termos de privacidade e aceita que entramos em contato para futuras colaborações.</p>
-                <div class="box-select">
-                    <div>
-                        <input type="radio" id="S" value="S" name="termoAceite">
-                        <label for="S"> Concordo </label>
-                    </div>
-                    <div>
-                        <input type="radio" id="N" value="N" name="termoAceite">
-                        <label for="N">  Não Concordo  </label>
-                    </div>
-                </div>
-                <br>
+                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required">
+                </div>    
                 <div class="div_formBotao">
                     <button type="submit" class="formBotao">
                         ENVIAR
@@ -77,7 +61,7 @@
             </form>
         </div>
         <div class="imagemParceria">
-        <img src="imagens/Recilygroup.jpg" alt="fotoParceria" class="fotoParceria">
+        <img src="imagens/Recilygroup.jpg" alt="fotoParceria" class="fotoParceria" >
         </div>
         <h1 class="tituloEmpresas">
             EMPRESAS PARCEIRAS
@@ -112,15 +96,56 @@
 const form = document.getElementById('formCadastro');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
-const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/ ;
+const btnEnviar = document.getElementsByClassName('formBotao');
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('oi')
+   // nameValidation();
+    //cpfValidate();
+    //emailValidate();
+    
+});
+
+function setError(index){
+ campos[index].style.border='3px solid #c63636';
+ spans[index].style.display = 'block';
+}
+
+function removeError(index){
+    campos[index].style.border='';
+    spans[index].style.display = 'none';
+}
+
 
 function nameValidation(){
     if (campos[0].value.length < 6) 
     {
-        console.log("Nome deve ter minimo 6 caracteres")
+        setError(0);
     } else {
-        console.log("validado nome")
+        removeError(0);
     }
 }
+
+function cpfValidate(){
+    if(campos[1].value.length != 11)
+    {
+        setError(1);
+    } else {
+        removeError(1);
+    }
+}
+
+function emailValidate(){
+    if(!emailRegex.test(campos[3].value))
+    {
+        setError(3);
+    } else {
+        removeError(3);
+    }
+}
+
 </script>
 </html>

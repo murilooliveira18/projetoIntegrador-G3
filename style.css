@@ -214,6 +214,7 @@ header{
 .seta {
     width: 20px;
     height: 30px;
+    cursor: pointer;
 }
 
 .tituloApoiador{
@@ -330,30 +331,45 @@ img.iconesRedeSocial{
     justify-content: center;
     align-items: center;
     align-self: center;
-    padding: 20px 20px;
+    padding: 2rem;
     border: 10%;
-    
+    min-width: 30%;
 }
 
 .dados{
     width: 450px;
     padding: 15px;
-    border:none;
+    border-radius: 5px;
+    outline: none;
     background: #D9D9D9;
-    box-shadow: -3px 5px 3px rgb(130, 129, 129)
+    box-shadow: -3px 5px 3px rgb(130, 129, 129);
+    transition: .3s;
 }
+
+.dados:focus{
+    border-color: #417A4A;
+}
+
 .formDados{
     padding: 15px;
     color: #417A4A;
 }
 
 .formBotao{
-    padding: 20px 100px;
+    padding: 20px 80px;
     background: #39FA5A;
     color: #fff;
-    border: 5px solid #39FA5A;
-    margin: 20px;
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .3s;
 }
+.formBotao:hover{
+    background: #166123; 
+}
+
 
 .imagemParceria{
     display: flex;
@@ -374,12 +390,11 @@ img.iconesRedeSocial{
 }
 
 .span-required {
+    font-size: 18px;
+    margin: 3px 0 0 1px;
+    display: none; 
     padding: 5px;
     color: rgba(184, 16, 16, 0.851);
-    font-weight: bold;
 }
 
 
-.box-select{
-
-}
