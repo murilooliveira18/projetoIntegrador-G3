@@ -64,19 +64,30 @@ header{
 
 /*                                                      Aqui começa a MAIN                                                               */
 
-.bannerPrincipal{
+.div-imagemTopo{
+    display: flex;
+    justify-content: center;
+}
+
+.imagemTopo{
+    border: thin solid;
+    padding: 10px;
+    border-radius: 100px;
     width: 100%;
+    height: 650px;
+    margin-top: 8%;
 }
 
 .links{
     color: #166123;
     text-align: center;
-    padding: 50px;
+    padding-bottom: 0px;
+    padding-top: 200px;
     font-size: 40px;
 }
 
 .linksAjuda{
-    padding: 100px 0px;
+    padding: 0px;
     display: flex;
     text-align: justify;
 }
@@ -84,21 +95,36 @@ header{
 .texto_ajuda {
     display: inline-block;
     text-indent: 20px;
-    margin: 10px;
-    padding: 0 30px 0 30px;
+    margin: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
     justify-content: center;
     text-align: justify
+}
+
+.subtitle1 {
+    text-align: center;
+}
+
+.subtitle2 {
+    text-align: center;
+    padding-top: 400px;
 }
 
 .link_description_section_I {
     display: flex;
     gap: 200px;
     margin-top: 90px;
+}
 
+.link_description_section_II {
+    display: flex;
+    gap: 200px;
+    margin-top: 70px;
 }
 
 .link_description_services_one, .link_description_services_two {
-    
     border-radius: 12px;
     width: 300px;
     height: 200px;
@@ -107,16 +133,26 @@ header{
     justify-content: end; 
 }
 
+.link_description_services_three, .link_description_services_four {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 225px;
+    padding-bottom: 300px;
+    justify-content: end; 
+}
+
 .banner_imagem {
     padding: 50px;
     width: 190px;
-    height: 80px;
+    height: 65px;
 }
 
 .banner_imagem2 {
     padding: 50px;
     width: 120px;
-    height: 100px;
+    height: 120px;
 }
 
 .banner_imagem3 {
@@ -128,7 +164,7 @@ header{
 .banner_imagem4 {
     padding: 50px;
     width: 240px;
-    height: 80px;
+    height: 75px;
 }
 
 .link_description_services_title {
@@ -145,22 +181,6 @@ header{
     text-indent: 20px;
 }
 
-.link_description_section_II {
-    display: flex;
-    gap: 200px;
-    margin-top: 250px;
-}
-
-.link_description_services_three, .link_description_services_four {
-    border-radius: 12px;
-    width: 300px;
-    height: 200px;
-    padding-top: 150px;
-    padding-left: 225px;
-    padding-bottom: 300px;
-    justify-content: end; 
-}
-
 .empresasParceiras{
     display: flex;
     justify-content: space-between;
@@ -174,7 +194,7 @@ header{
     color: #166123;
     text-align: center;
     padding-bottom: 100px;
-    padding: 50px 0;
+    padding-top: 150px;
     font-size: 40px;
 }
 
