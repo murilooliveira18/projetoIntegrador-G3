@@ -7,6 +7,7 @@
     <title>Biome - Página Home</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <header>
@@ -226,10 +227,36 @@
       <h1 class="tituloEmpresas">EMPRESAS PARCEIRAS</h1>
       <div class="empresasParceiras">
         <img src="imagens/Vector 3.png" alt="" class="seta" />
-        <a href="https://prozeducacao.com.br/" target="_blank" class="linkEmpresa"><img src="imagens/proz.jpeg" alt="empresa-parceira1" class="imgEmpresaParceira"/></a>
-        <a href="https://www.wwf.org.br/" target="_blank" class="linkEmpresa"><img src="imagens/wwf.jpeg" alt="empresa-parceira2" class="imgEmpresaParceira"/></a>
-        <a href="https://www.greenpeace.org/brasil/" target="_blank" class="linkEmpresa"><img src="imagens/greenpeace.jpeg" alt="empresa-parceira3" class="imgEmpresaParceira"/></a>
-        <a href="https://akatu.org.br/" target="_blank" class="linkEmpresa"><img src="imagens/akatu.jpeg" alt="empresa-parceira4" class="imgEmpresaParceira"/></a>
+        <a
+          href="https://prozeducacao.com.br/"
+          target="_blank"
+          class="linkEmpresa"
+          ><img
+            src="imagens/proz.jpeg"
+            alt="empresa-parceira1"
+            class="imgEmpresaParceira"
+        /></a>
+        <a href="https://www.wwf.org.br/" target="_blank" class="linkEmpresa"
+          ><img
+            src="imagens/wwf.jpeg"
+            alt="empresa-parceira2"
+            class="imgEmpresaParceira"
+        /></a>
+        <a
+          href="https://www.greenpeace.org/brasil/"
+          target="_blank"
+          class="linkEmpresa"
+          ><img
+            src="imagens/greenpeace.jpeg"
+            alt="empresa-parceira3"
+            class="imgEmpresaParceira"
+        /></a>
+        <a href="https://akatu.org.br/" target="_blank" class="linkEmpresa"
+          ><img
+            src="imagens/akatu.jpeg"
+            alt="empresa-parceira4"
+            class="imgEmpresaParceira"
+        /></a>
         <img src="imagens/Vector 3 (1).png" alt="" class="seta" />
       </div>
       <h1 class="tituloApoiador">GOSTOU? GOSTARIA DE SE TORNAR UM APOIADOR?</h1>
@@ -239,7 +266,9 @@
           placeholder="ESCREVA SEU E-MAIL..."
           class="escreverEmail"
         />
-        <button class="inscreverSe">INSCREVER-SE</button>
+        <button class="inscreverSe" onclick="enviarNewsletter();">
+          INSCREVER-SE
+        </button>
       </div>
     </main>
     <footer class="rodape">
@@ -277,3 +306,23 @@
     </footer>
   </body>
 </html>
+
+<script>
+  function enviarNewsletter() {
+    swal({
+      title: "Você tem certeza?",
+      text: "Seu e-mail sera cadastrado na nossa newsletter, e receberá eventuais novidades!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        swal("Pronto! Seu e-mail foi cadastrado com sucesso!", {
+          icon: "success",
+        });
+      } else {
+        swal("Seu e-mail não foi cadastrado!");
+      }
+    });
+  }
+</script>
