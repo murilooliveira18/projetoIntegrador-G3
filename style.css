@@ -432,3 +432,112 @@ img.iconesRedeSocial {
 }
 
 
+/* Tela materiais */
+
+
+.menu_selecionado{
+  background: #39FA5A;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.menu_selecionado{
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s;
+}
+.menu_selecionado:hover{
+  background: #166123;
+  color: #fff;
+}
+
+
+
+.materiais_main {
+  height:300%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 250px;
+}
+
+
+
+.materiais_main_subtitle {
+  font-size: 20px;
+  color: #166123;
+  text-align: center;
+  font-style: italic;
+}
+
+.banner_imagem {
+  padding: 20px 0;
+  width: 100%;
+}
+
+
+.materiais_description_section_I {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+
+}
+
+.materiais_description_services_one, .materiais_description_services_two {
+  
+  border-radius: 50px;
+  width: 300px;
+  height: 480px;
+  padding: 30px;
+  justify-content: end;
+  background-color: #39FA5A;
+  
+}
+
+.materiais_description_services_title {
+  margin-bottom: 16px;
+  color: #166123;
+  text-align: center;
+}
+.materiais_texto {
+  color: #166123;
+  text-align: justify;
+}
+
+
+.materiais_description_section_II {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+
+}
+
+.materiais_description_services_three, .materiais_description_services_four {
+  
+  border-radius: 50px;
+  width: 300px;
+  height: 480px;
+  padding: 30px;
+  justify-content: end;
+  background-color: #39FA5A;
+  
+}
+
+.materiais_description_section_III {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+
+}
+
+.materiais_description_services_five, .materiais_description_services_six {
+  border-radius: 50px;
+  width: 300px;
+  height: 480px;
+  padding: 30px;
+  justify-content: end;
+  background-color: #39FA5A;
+ 
+}
+
