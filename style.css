@@ -222,6 +222,12 @@ header {
   padding: 0px 80px;
 }
 
+.logo-empresasParceira{
+    width: 130px;
+    border: 10px;
+    cursor: pointer;
+}
+
 .seta {
   width: 20px;
   height: 30px;
@@ -407,9 +413,9 @@ img.iconesRedeSocial {
   margin-top: 8%;
 }
 
-.div_formBotao {
-  display: flex;
-  justify-content: center;
+.div_formBotao{
+    display: flex;
+    justify-content: center;
 }
 
 .botaoFormulario {
@@ -424,3 +430,5 @@ img.iconesRedeSocial {
   padding: 5px;
   color: rgba(184, 16, 16, 0.851);
 }
+
+
