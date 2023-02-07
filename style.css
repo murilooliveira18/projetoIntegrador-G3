@@ -456,8 +456,6 @@ img.iconesRedeSocial {
   color: #fff;
 }
 
-
-
 .materiais_main {
   height:300%;
   display: flex;
@@ -466,7 +464,22 @@ img.iconesRedeSocial {
   padding: 0 250px;
 }
 
+.materiais_main_titles {
+  background-color: white;
+  padding: 5px 0px;
+  border-right: 250px solid white;
+  border-left: 250px solid white;
+  width: 100%;
+  height: 150px;    
+}
 
+.materiais_main_title {
+  margin: 20px;
+  padding-top: 20px;
+  color: #166123;
+  text-align: center;
+
+}
 
 .materiais_main_subtitle {
   font-size: 20px;
@@ -544,4 +557,3 @@ img.iconesRedeSocial {
   background-color: #39FA5A;
  
 }
-
