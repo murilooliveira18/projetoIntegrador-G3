@@ -255,9 +255,11 @@ header {
   padding: 0px 130px;
   margin-bottom: 100px;
 }
-
+.formularioApoiador{
+  width: 100%;
+}
 .escreverEmail {
-  width: 70%;
+  width: 80%;
   padding: 21px;
   border: none;
   background: #d9d9d9;
@@ -283,6 +285,7 @@ header {
   color: #fff;
   border: 1px solid #39fa5a;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .linkEmpresa {

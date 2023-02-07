@@ -267,9 +267,45 @@
                   class="imgEmpresaParceira"
               /></a></div
           ></swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide ...</swiper-slide>
+          <swiper-slide>
+            <div class="empresasParceiras">
+              <a
+                href="https://progambiental.com.br/"
+                target="_blank"
+                class="linkEmpresa"
+                ><img
+                  src="imagens/prog_ambiental.png"
+                  alt="empresa-parceira1"
+                  class="imgEmpresaParceira"
+              /></a>
+              <a
+                href="https://biorevita.com.br/"
+                target="_blank"
+                class="linkEmpresa"
+                ><img
+                  src="imagens/biorevita.png"
+                  alt="empresa-parceira2"
+                  class="imgEmpresaParceira"
+              /></a>
+              <a
+                href="https://greenviewgv.com.br/"
+                target="_blank"
+                class="linkEmpresa"
+                ><img
+                  src="imagens/greenview.png"
+                  alt="empresa-parceira3"
+                  class="imgEmpresaParceira"
+              /></a>
+              <a
+                href="https://www.lelisambiental.com.br/Default.asp"
+                target="_blank"
+                class="linkEmpresa"
+                ><img
+                  src="imagens/lelisAmbiental.png"
+                  alt="empresa-parceira4"
+                  class="imgEmpresaParceira"
+              /></a></div
+          ></swiper-slide>
         </swiper-container>
       </div>
 
@@ -279,7 +315,8 @@
           type="text"
           placeholder="ESCREVA SEU E-MAIL..."
           class="escreverEmail"
-          id="txtEmail"
+          id="email"
+          name="email"
         />
         <input
           type="submit"
@@ -296,7 +333,7 @@
         >
       </div>
       <div class="copy">
-        <p class="textoCopy">© 2023 Biome. Todos os direitos reservados.</p>
+        <p class="textoCopy">© 2022 Biome. Todos os direitos reservados.</p>
         <div class="redesSociais">
           <img
             src="imagens/instagram 1.png"
@@ -325,6 +362,7 @@
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script>
+
   function enviarNewsletter() {
     swal({
       title: "Você tem certeza?",
