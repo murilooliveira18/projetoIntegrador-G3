@@ -11,22 +11,23 @@
 <body>
     <header>
         <div class="menu">
-            <a href="apoiador.html"><img src="imagens/biome-logo.png" alt="logo-biome" class="logoTopo"></a>
+            <a href="apoiador.html">
+                <img src="imagens/biome-logo.png" alt="logo-biome" class="logoTopo"></a>
             <nav class="menuItens">
                 <ul>
                     <li class="menus"><a href="index.html">Quem Somos</a></li>
                 </ul>
                  <ul>
-                    <li class="menus">Materiais</li>
+                    <li class="menus"><a href="materiais.html">Materiais</a></li>
                 </ul>
                 <ul>
                     <li class="menus">Ecopontos</li>
                 </ul>
                 <ul>
-                    <li class="menuSelecionado">Seja um apoiador</li>
+                    <li class="menus">Seja um apoiador</li>
                 </ul>
                 <ul>
-                    <li class="menus">Links utéis</li>
+                    <li class="menus"><a href=linksuteis.html>Links Úteis</a></li>
                 </ul>
                 <ul>
                     <li class="menus"><a href="contato.html">Contato</a></li>
@@ -93,21 +94,88 @@
             EMPRESAS PARCEIRAS
         </h1>
         <div class="empresasParceiras">
-            <img src="imagens/Vector 3.png" alt="" class="seta">
-            <a target="_blank" href= "https://prozeducacao.com.br/">
-                <img src="imagens/proz_logo.jpg" alt="proz-tecnologia" class="logo-empresasParceira"> 
-            </a>
-            <a target="blank" href= "https://www.wwf.org.br/"> 
-                <img src="imagens/wwf_logo.png" alt="wwf" class="logo-empresasParceira">  
-            </a>
-            <a target="blank" href= "https://www.greenpeace.org/brasil/"> 
-                <img src="imagens/green_logo.png" alt="green-peace" class="logo-empresasParceira">  
-            </a>
-            <a target="_blank" href= "https://akatu.org.br/"> 
-                <img src="imagens/akatu_logo.png" alt="akatu" class="logo-empresasParceira">
-            </a>
-                <img src="imagens/Vector 3 (1).png" alt="" class="seta">
-        </div>
+            <swiper-container>
+              <swiper-slide>
+                <div class="empresasParceiras">
+                  <a
+                    href="https://prozeducacao.com.br/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/proz.jpeg"
+                      alt="empresa-parceira1"
+                      class="imgEmpresaParceira"
+                  /></a>
+                  <a
+                    href="https://www.wwf.org.br/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/wwf.jpeg"
+                      alt="empresa-parceira2"
+                      class="imgEmpresaParceira"
+                  /></a>
+                  <a
+                    href="https://www.greenpeace.org/brasil/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/greenpeace.jpeg"
+                      alt="empresa-parceira3"
+                      class="imgEmpresaParceira"
+                  /></a>
+                  <a
+                    href="https://akatu.org.br/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/akatu.jpeg"
+                      alt="empresa-parceira4"
+                      class="imgEmpresaParceira"
+                  /></a></div
+              ></swiper-slide>
+              <swiper-slide>
+                <div class="empresasParceiras">
+                  <a
+                    href="https://progambiental.com.br/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/prog_ambiental.png"
+                      alt="empresa-parceira1"
+                      class="imgEmpresaParceira"
+                  /></a>
+                  <a
+                    href="https://biorevita.com.br/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/biorevita.png"
+                      alt="empresa-parceira2"
+                      class="imgEmpresaParceira"
+                  /></a>
+                  <a
+                    href="https://greenviewgv.com.br/"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/greenview.png"
+                      alt="empresa-parceira3"
+                      class="imgEmpresaParceira"
+                  /></a>
+                  <a
+                    href="https://www.lelisambiental.com.br/Default.asp"
+                    target="_blank"
+                    class="linkEmpresa"
+                    ><img
+                      src="imagens/lelisAmbiental.png"
+                      alt="empresa-parceira4"
+                      class="imgEmpresaParceira"
+                  /></a></div
+              ></swiper-slide>
+            </swiper-container>
+          </div>
+          
     </main>
     <br>
     <footer class="rodape">
@@ -125,6 +193,7 @@
         </div>
     </footer> 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script>
 
 
