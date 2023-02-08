@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -17,9 +19,11 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 .logoTopo {
   width: 85px;
 }
+
 .menuSelecionado {
   background: #39fa5a;
   border-radius: 30px;
@@ -40,7 +44,7 @@ header {
   padding: 0 20px;
 }
 
-.menus > a {
+.menus>a {
   color: #fff;
   text-decoration: none;
 }
@@ -51,10 +55,12 @@ header {
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .menuSelecionado:hover {
   background: #166123;
   color: #fff;
 }
+
 .menus:hover {
   opacity: 0.7;
 }
@@ -88,22 +94,26 @@ header {
   color: #417a4a;
   text-align: justify;
 }
+
 .tituloImpactos {
   color: #166123;
   text-align: center;
   padding: 50px 0;
   font-size: 40px;
 }
+
 .topicosImpactos,
 .topicosBeneficios {
   padding: 20px 0px;
 }
+
 .tituloNovidades {
   color: #166123;
   text-align: center;
   padding-right: 50px 0px;
   font-size: 40px;
 }
+
 .impactosCausados {
   padding: 100px 0px;
   display: flex;
@@ -115,6 +125,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .faleConosco {
   display: flex;
   justify-content: left;
@@ -129,6 +140,7 @@ header {
   font-size: 24px;
   color: #417a4a;
 }
+
 .textoImpactos {
   width: 50%;
   padding-right: 50px;
@@ -136,6 +148,7 @@ header {
   color: #417a4a;
   text-align: justify;
 }
+
 .imagensImpactos {
   width: 30%;
 }
@@ -147,6 +160,7 @@ header {
 .bannerImpactos:first-child {
   padding-top: 0;
 }
+
 .bannerImpactos {
   padding: 20px 0;
   width: 100%;
@@ -187,8 +201,9 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .bannerBeneficios {
-  width: 90%;
+  width: 60%;
 }
 
 .tituloObjetivos {
@@ -220,13 +235,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 80px;
+  padding: 20px 80px;
 }
 
-.logo-empresasParceira{
-    width: 130px;
-    border: 10px;
-    cursor: pointer;
+.logo-empresasParceira {
+  width: 130px;
+  border: 10px;
+  cursor: pointer;
 }
 
 .seta {
@@ -241,6 +256,7 @@ header {
   padding: 50px 0;
   font-size: 40px;
 }
+
 .faleConosco {
   color: #166123;
   text-align: center;
@@ -255,15 +271,18 @@ header {
   padding: 0px 130px;
   margin-bottom: 100px;
 }
-.formularioApoiador{
+
+.formularioApoiador {
   width: 100%;
 }
+
 .escreverEmail {
   width: 80%;
   padding: 21px;
   border: none;
   background: #d9d9d9;
 }
+
 .escrever {
   width: 50%;
   padding: 20px;
@@ -291,6 +310,7 @@ header {
 .linkEmpresa {
   width: 10%;
 }
+
 .imgEmpresaParceira {
   width: 100%;
 }
@@ -299,10 +319,12 @@ header {
   background: #1c7a2b;
   padding: 40px 0px;
 }
+
 .infos {
   display: flex;
   justify-content: center;
 }
+
 .infosExtras {
   color: #fff;
   font-size: 24px;
@@ -319,6 +341,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .textoCopy {
   padding-right: 50px;
 }
@@ -330,6 +353,7 @@ header {
 img.iconesRedeSocial {
   cursor: pointer;
 }
+
 .redesSociais {
   display: flex;
   align-items: center;
@@ -340,6 +364,7 @@ img.iconesRedeSocial {
   width: 25px;
   padding: 0 5px;
 }
+
 .iconesRedeSocial {
   width: 20px;
   padding: 0 5px;
@@ -352,6 +377,7 @@ img.iconesRedeSocial {
   padding: 50px 20px 20px;
   font-size: 40px;
 }
+
 .formCadastro {
   display: flex;
   justify-content: center;
@@ -392,6 +418,7 @@ img.iconesRedeSocial {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .formBotao:hover {
   background: #166123;
 }
@@ -417,9 +444,9 @@ img.iconesRedeSocial {
   margin-top: 8%;
 }
 
-.div_formBotao{
-    display: flex;
-    justify-content: center;
+.div_formBotao {
+  display: flex;
+  justify-content: center;
 }
 
 .botaoFormulario {
@@ -439,25 +466,26 @@ img.iconesRedeSocial {
 /* Tela materiais */
 
 
-.menu_selecionado{
+.menu_selecionado {
   background: #39FA5A;
   border-radius: 30px;
   padding: 15px;
 }
 
-.menu_selecionado{
+.menu_selecionado {
   list-style: none;
   color: #fff;
   cursor: pointer;
   transition: all .3s;
 }
-.menu_selecionado:hover{
+
+.menu_selecionado:hover {
   background: #166123;
   color: #fff;
 }
 
 .materiais_main {
-  height:300%;
+  height: 300%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -470,7 +498,7 @@ img.iconesRedeSocial {
   border-right: 250px solid white;
   border-left: 250px solid white;
   width: 100%;
-  height: 150px;    
+  height: 150px;
 }
 
 .materiais_main_title {
@@ -501,15 +529,16 @@ img.iconesRedeSocial {
 
 }
 
-.materiais_description_services_one, .materiais_description_services_two {
-  
+.materiais_description_services_one,
+.materiais_description_services_two {
+
   border-radius: 50px;
   width: 300px;
   height: 480px;
   padding: 30px;
   justify-content: end;
   background-color: #39FA5A;
-  
+
 }
 
 .materiais_description_services_title {
@@ -517,6 +546,7 @@ img.iconesRedeSocial {
   color: #166123;
   text-align: center;
 }
+
 .materiais_texto {
   color: #166123;
   text-align: justify;
@@ -530,15 +560,16 @@ img.iconesRedeSocial {
 
 }
 
-.materiais_description_services_three, .materiais_description_services_four {
-  
+.materiais_description_services_three,
+.materiais_description_services_four {
+
   border-radius: 50px;
   width: 300px;
   height: 480px;
   padding: 30px;
   justify-content: end;
   background-color: #39FA5A;
-  
+
 }
 
 .materiais_description_section_III {
@@ -548,12 +579,140 @@ img.iconesRedeSocial {
 
 }
 
-.materiais_description_services_five, .materiais_description_services_six {
+.materiais_description_services_five,
+.materiais_description_services_six {
   border-radius: 50px;
   width: 300px;
   height: 480px;
   padding: 30px;
   justify-content: end;
   background-color: #39FA5A;
- 
+
+}
+
+/* CSS da página Links Úteis */
+
+.links{
+    color: #166123;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 200px;
+    font-size: 40px;
+}
+
+.linksAjuda{
+    padding: 0px;
+    display: flex;
+    text-align: justify;
+}
+
+.texto_ajuda {
+    display: inline-block;
+    text-indent: 20px;
+    margin: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    text-align: justify
+}
+
+.subtitle1 {
+    text-align: center;
+}
+
+.subtitle2 {
+    text-align: center;
+    padding-top: 400px;
+}
+
+.link_description_section_I {
+    display: flex;
+    gap: 200px;
+    margin-top: 90px;
+}
+
+.link_description_section_II {
+    display: flex;
+    gap: 200px;
+    margin-top: 70px;
+}
+
+.link_description_services_one, .link_description_services_two {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    padding-left: 225px;
+    justify-content: end; 
+}
+
+.link_description_services_three, .link_description_services_four {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 225px;
+    padding-bottom: 300px;
+    justify-content: end; 
+}
+
+.banner_imagem {
+    padding: 50px;
+    width: 190px;
+    height: 65px;
+}
+
+.banner_imagem2 {
+    padding: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.banner_imagem3 {
+    padding: 50px;
+    width: 180px;
+    height: 100px;
+}
+
+.banner_imagem4 {
+    padding: 50px;
+    width: 240px;
+    height: 75px;
+}
+
+.link_description_services_title {
+    margin-bottom: 16px;
+    color: #166123;
+    text-align: center;
+}
+
+.link_texto {
+    display: inline-block;
+    color: #166123;
+    text-align: justify;
+    margin-bottom: 90px;
+    text-indent: 20px;
+}
+
+.ecopontosParaDescarte {
+  padding: 20px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ecopontosLinha {
+  width: 45%;
+}
+
+.imagemEcoponto {
+  width: 100%;
+  height: 400px;
+}
+
+.descricaoEcopontos {
+  text-align: center;
+  font-size: 24px;
+  padding: 0px 120px;
+  color: #417a4a;
 }
