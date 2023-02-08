@@ -590,6 +590,111 @@ img.iconesRedeSocial {
 
 }
 
+/* CSS da página Links Úteis */
+
+.links{
+    color: #166123;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 200px;
+    font-size: 40px;
+}
+
+.linksAjuda{
+    padding: 0px;
+    display: flex;
+    text-align: justify;
+}
+
+.texto_ajuda {
+    display: inline-block;
+    text-indent: 20px;
+    margin: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    text-align: justify
+}
+
+.subtitle1 {
+    text-align: center;
+}
+
+.subtitle2 {
+    text-align: center;
+    padding-top: 400px;
+}
+
+.link_description_section_I {
+    display: flex;
+    gap: 200px;
+    margin-top: 90px;
+}
+
+.link_description_section_II {
+    display: flex;
+    gap: 200px;
+    margin-top: 70px;
+}
+
+.link_description_services_one, .link_description_services_two {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    padding-left: 225px;
+    justify-content: end; 
+}
+
+.link_description_services_three, .link_description_services_four {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 225px;
+    padding-bottom: 300px;
+    justify-content: end; 
+}
+
+.banner_imagem {
+    padding: 50px;
+    width: 190px;
+    height: 65px;
+}
+
+.banner_imagem2 {
+    padding: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.banner_imagem3 {
+    padding: 50px;
+    width: 180px;
+    height: 100px;
+}
+
+.banner_imagem4 {
+    padding: 50px;
+    width: 240px;
+    height: 75px;
+}
+
+.link_description_services_title {
+    margin-bottom: 16px;
+    color: #166123;
+    text-align: center;
+}
+
+.link_texto {
+    display: inline-block;
+    color: #166123;
+    text-align: justify;
+    margin-bottom: 90px;
+    text-indent: 20px;
+}
+
 .ecopontosParaDescarte {
   padding: 20px 120px;
   display: flex;
