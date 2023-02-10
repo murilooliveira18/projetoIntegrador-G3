@@ -121,17 +121,28 @@ header {
 }
 
 .novidades {
-  padding: 100px 0px;
+  padding: 30px 20px;
   display: flex;
   justify-content: center;
-}
+  margin: 20px;
+ }
 
 .faleConosco {
   display: flex;
-  justify-content: left;
-  align-items: left;
-  padding: 0px 130px;
-  margin-bottom: 10px;
+  justify-content: center;
+  color: #166123;
+  padding: 50px 20px 20px;
+  font-size: 40px;
+}
+
+.formFale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 2rem;
+  border: 10%;
+  min-width: 50%;
 }
 
 .textoNovidadeds {
@@ -154,7 +165,7 @@ header {
 }
 
 .imagensNovidades {
-  width: 30%;
+  width: 35%;
 }
 
 .bannerImpactos:first-child {
@@ -166,9 +177,10 @@ header {
   width: 100%;
 }
 
-.bannerNovidades {
-  padding: 20px 0;
+.New {
+  padding: 30px 0;
   width: 100%;
+  height: 100%;
 }
 
 .tituloBeneficios {
@@ -284,17 +296,27 @@ header {
 }
 
 .escrever {
-  width: 50%;
-  padding: 20px;
-  border: none;
+  width: 450px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
   background: #d9d9d9;
+  box-shadow: -3px 5px 3px rgb(130, 129, 129);
+  transition: 0.3s;
+}
+
+.escrever focus {
+  border-color: #417a4a;
 }
 
 .mensage {
-  width: 80%;
-  padding: 60px;
-  border: none;
+  width: 450px;
+  padding: 30px;
+  border-radius: 5px;
+  outline: none;
   background: #d9d9d9;
+  transition: 0.3s;
+  box-shadow: -3px 5px 3px rgb(130, 129, 129);
 }
 
 .inscreverSe {
@@ -347,7 +369,9 @@ header {
 }
 
 .fale {
-  padding-right: 50px;
+  padding: 10px;
+  color: #417a4a;
+ 
 }
 
 img.iconesRedeSocial {
