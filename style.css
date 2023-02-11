@@ -4,6 +4,7 @@
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 header {
@@ -489,7 +490,7 @@ img.iconesRedeSocial {
   
   color: #166123;
   text-align: center;
-  padding: 150px 0 0 0;
+  padding: 180px 0 0 0;
   font-size: 40px;
 }
 
@@ -513,11 +514,10 @@ img.iconesRedeSocial {
   justify-content: center;
   align-items: center;
   min-height: 40vh;
+  text-decoration: none;
  
 }
 .materiais_description_section_I {
-  
-  
     position: relative;
     display: flex;
     justify-content: center;
@@ -525,31 +525,47 @@ img.iconesRedeSocial {
     max-width: 1200px;
     z-index: 1;
     text-decoration: none;
-    
-    
 }
 
 
 
-.materiais_card {
-
+.materiais_card1, .materiais_card2, .materiais_card3, .materiais_card4 {
     position: relative;
     width: 250px;
-    height: 400px;
+    height: 270px;
     margin: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 1);
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
     align-items: center;
-    
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 8px;
+    border-top: 1px solid rgba(25, 255, 0.5);
+    border-left: 1px solid rgba(5, 186, 0.5);
+    padding: 30px;
     justify-content: end;
-    text-decoration: none;
-    
-   
-  
+    border-color: #22cf3f;
+       
+}
+
+.materiais_card1 {
+  background-image: url("imagens/azul.jpg");
+  background-size: contain;
+
+}
+
+.materiais_card2 {
+  background-image: url("imagens/verde.jpg");
+  background-size: contain;
+
+}
+
+.materiais_card3 {
+  background-image: url("imagens/vermelho.jpg");
+  background-size: contain;
+
+}
+
+.materiais_card4 {
+  background-image: url("imagens/amarelo.jpg");
+  background-size: contain;
 
 }
 
@@ -557,46 +573,19 @@ img.iconesRedeSocial {
   margin-bottom: 16px;
   color: #166123;
   text-align: center;
-  text-decoration: none;
+  
+  
 }
 
 .materiais_texto {
-  color: #166123;
+  color: black;
   text-align: justify;
   text-decoration: none;
+  font-weight: bolder;
+  
 }
 
 
-/* .materiais_description_section_II {
-  position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1;
-
-}
-
-.materiais_description_services_three,
-.materiais_description_services_four {
-
-  position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 5);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 20px;
-
-} */
 
 
 

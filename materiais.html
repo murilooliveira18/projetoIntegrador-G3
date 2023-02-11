@@ -44,7 +44,7 @@
         </h1>
         <div class="materiais_subtitulo">
            <p>
-                Quase tudo pode ser reciclado, mas para que isso aconteça os materiais secos devem, inicialmente, ser separados dos úmidos. No caso dos plásticos, lave-os bem para que não fiquem restos do produto, podendo dificultar assim a triagem e o aproveitamento do material. As tampas dos vidros devem ser retiradas. Latinhas de refrigerantes, cervejas e enlatados devem ser amassadas ou prensadas para facilitar o armazenamento. Papeis podem ser guardados diretamente em sacos plásticos.
+                Quase tudo pode ser reciclado, mas para que isso aconteça os materiais secos devem, inicialmente, ser separados dos úmidos. No caso dos plásticos, lave-os bem para que não fiquem restos do produto, podendo assim dificultar a triagem e o aproveitamento do material. As tampas dos vidros devem ser retiradas. Latinhas de refrigerantes, cervejas e enlatados devem ser amassadas ou prensadas para facilitar o armazenamento. Papeis podem ser guardados diretamente em sacos plásticos.
 
             </p> 
                 
@@ -54,69 +54,75 @@
 
         <div class="materiais_description_section_I">
               
-            <div class="materiais_card">
-                <a target="blank" href="https://www.google.com">
+            <div class="materiais_card1">
                 <div>
-                    <img src="imagens/papeeeel.jpg" alt="imagem banner" class="banner_imagem">
                     <h3 class="materiais_description_services_title">
-                    Papel
+                    PAPEL
                     </h3>
+                    <br>
                 </div>
                 <p class="materiais_texto">
                     RECICLÁVEIS - papel, livros, jornais, papelões, revistas, cadernos e embalagens cartonadas.
                     
                 </p>
+                <br>
                 <p class="materiais_texto"> NÃO RECICLÁVEIS - guardanapos, papel higiênico, etiquetas adesivas, papeis metalizados/plastificados e papel toalha.</p>
                 </a>
-            </div>
+                </div>
                           
-            <div class="materiais_card">
-                <a target="blank" href="https://www.google.com">
-                <img src="imagens/vidro.jpg" alt="imagem banner" class="banner_imagem">
+            <div class="materiais_card2">
+                
                 <div>
                     <h3 class="materiais_description_services_title">
-                        Vidro
+                        VIDRO
                     </h3>
+                    <br>
                 </div>
                 <p class="materiais_texto">
                     RECICLÁVEIS - garrafas, frascos, potes de produtos alimentícios e frascos.
                     
                 </p>
+                <br>
                 <p class="materiais_texto"> NÃO RECICLÁVEIS - cristais, espelhos, lâmpadas, ampolas de medicamentos e procelanas.</p>
                 </a>
             </div>                      
             
         
               
-            <div class="materiais_card">
-                <a target="blank" href="https://www.google.com">
+            <div class="materiais_card3">
+                
                     <div>
-                        <img src="imagens/plastico.jpg" alt="imagem banner" class="banner_imagem">
+                        
                         <h3 class="materiais_description_services_title">
-                        Plástico
+                        PLÁSTICO
                         </h3>
+                        <br>
                     </div>
                     <p class="materiais_texto">
                         RECICLÁVEIS - Embalagens, garrafas, copos, tampas, sacolas, baldes, potes de alimentos PVC.
                         
                     </p>
+                    <br>
                     <p class="materiais_texto"> NÃO RECICLÁVEIS - Fraldas descartáveis, adesivos e embalagens com lâminas metalizadas.</p>
                 </a>
                 </div>                        
-                <div class="materiais_card">
-                    <a target="blank" href="https://www.google.com">
-                    <img src="imagens/metal.jpg" alt="imagem banner" class="banner_imagem">
+                <div class="materiais_card4">
+                    
+                    
                     <div>
                         <h3 class="materiais_description_services_title">
-                            Metal
+                            METAL
                         </h3>
+                        <br>
                     </div>
                     <p class="materiais_texto">
+                        
                         RECICLÁVEIS - Latas, alumínio, latas de aço, ferragens, arame e canos.
                         
                     </p>
+                    <br>
                     <p class="materiais_texto"> NÃO RECICLÁVEIS - Clipes, grampos, pilhas, baterias, esponjas de aço e latas de tintas.</p>
-                    </a>
+                        
                 </div>
             
 
@@ -160,14 +166,38 @@
 </body>
 
 <script>
-    VanillaTilt.init(document.querySelectorAll(".materiais_card"), {
+    VanillaTilt.init(document.querySelectorAll(".materiais_card1", ".materiais_card2"), {
         max: 25,
         speed: 400,
         glare: true,
         "max-glare": 1,
 
     }
-    )        
+    
+    )  
+    VanillaTilt.init(document.querySelectorAll(".materiais_card2"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    }
+    ) 
+    VanillaTilt.init(document.querySelectorAll(".materiais_card3"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    }
+    )
+    
+    VanillaTilt.init(document.querySelectorAll(".materiais_card4"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+
+    }
+    )       
 </script>
 
 </html>
