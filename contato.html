@@ -55,12 +55,17 @@
                 </label><br>
                 <input type="tel" placeholder="DDD988887777" id="contato" name="phone" class="escrever">
             </div>
+            
             <div class="fale">
                 <label for="email">
                     E-MAIL:
                 </label><br>
                 <input type="email" placeholder="Digite seu e-mail" id="email" name="mailto" class="escrever">
+                <br>
+                <span class="span-required"> Digite um email válido </span>
             </div>
+
+
             <div class="fale">
                 <label for="assunto">
                     ASSUNTO:
@@ -98,6 +103,8 @@
                         </label>
                     <br>
                     <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever">
+                    <br>
+                    <span class="span-required"> * Nome deve conter no mínimo 6 caracteres * </span>
                     </div>
                     <div class="fale">
                         <label for="email">
@@ -157,4 +164,73 @@
     </footer>  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script>
+const nome = document.getElementById("nome")
+const cel = document.getElementById("cel")
+const email = document.getElementById("email")
+
+
+const form = document.getElementById("submit");
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/ ;
+    
+
+form.addEventListener('click', (e) => {
+    e.preventDefault();
+    nameValidation();
+    cpfValidate();
+    emailValidate();
+});
+
+
+function resetForm(){
+    nome.value = '';
+    cel.value = '';
+    email.value ='';
+   
+}
+
+function setError(index){
+    campos[index].style.border='3px solid #c63636';
+    spans[index].style.display = 'block';
+}
+
+function removeError(index){
+    campos[index].style.border='';
+    spans[index].style.display = 'none';
+}
+
+
+function nameValidation(){
+    if (campos[0].value.length < 6) 
+    {
+        setError(0);
+    } else {
+        removeError(0);
+    }
+}
+
+function cpfValidate(){
+    if(campos[1].value.length != 11)
+    {
+        setError(1);
+    } else {
+        removeError(1);
+    }
+}
+
+function emailValidate(){
+    if(!emailRegex.test(campos[3].value))
+    {
+        setError(3);
+    } else {
+        removeError(3);
+    }
+}
+
+
+</script>
 </html>
+
+
