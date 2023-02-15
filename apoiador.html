@@ -43,12 +43,12 @@
             SEJA UM APOIADOR BIOME 
         </h1> 
         <div class="formCadastro">
-            <form action="">
+            <form action="https://formsubmit.co/isabela.cirino23@gmail.com" method="POST"   id="form">
                 <div class="formDados">
                     <label for="nome">
                         NOME COMPLETO / RAZÃO SOCIAL
                     </label><br>
-                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados required" oninput="nameValidation()">
+                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados required" oninput="nameValidate()">
                     <br>
                     <span class="span-required"> * Nome deve conter no mínimo 6 caracteres * </span>
                 </div>
@@ -56,7 +56,7 @@
                     <label for="documento">
                         CPF / CNPJ
                     </label><br>
-                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc" class="dados required" oninput="cpfValidate()">
+                    <input type="number"  placeholder=" Digite seu documento  " id="doc" name="doc" class="dados required" oninput="docValidate()">
                     <br>
                     <span class="span-required"> Digite apenas números </span>
                 </div>
@@ -64,13 +64,15 @@
                     <label for="contato">
                         DDD + CELULAR
                     </label><br>
-                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" >
+                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" oninput="contatoValidate()">
+                    <br>
+                    <span class="span-required"> Informe um número para contato  </span>
                 </div>
                 <div class="formDados">
                     <label for="email">
                         E-MAIL
                     </label><br>
-                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto" class="dados required" oninput="emailValidate()">
+                    <input type="email" placeholder=" Digite seu melhor E-mail: " id="email" name="mailto" class="dados required" oninput="emailValidate()">
                     <br>
                     <span class="span-required"> Digite um email válido </span>
                 </div>
@@ -78,7 +80,9 @@
                     <label for="cidade">
                         CIDADE
                     </label><br>
-                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required">
+                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required" oninput="cidadeValidate()">
+                    <br>
+                    <span class="span-required"> Necessário cadastrar cidade </span>
                 </div>    
                 <div class="div_formBotao">
                     <button type="submit" id="submit" class="formBotao">
@@ -146,34 +150,45 @@
 <script>
 
 const nome = document.getElementById("nome")
-const cpf = document.getElementById("cpf")
-const cel = document.getElementById("cel")
+const cpf = document.getElementById("doc")
+const contato = document.getElementById("contato")
 const email = document.getElementById("email")
 const cidade = document.getElementById("cidade")
 
-const form = document.getElementById("submit");
-const campos = document.querySelectorAll(".required");
-const spans = document.querySelectorAll(".span-required");
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/ ;
-
-
-
-form.addEventListener('click', (e) => {
-    e.preventDefault();
-    nameValidation();
-    cpfValidate();
-    emailValidate(3);
-    resetForm();
-});
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const submitButton = document.getElementById('submit')
 
 
 function resetForm(){
     nome.value = '';
     cpf.value = '';
-    cel.value = '';
-    email.value ='';
-    cidade.value='';
+    contato.value = '';
+    email.value = '';
+    cidade.value= '';
 }
+
+
+function checkInputs() {
+    nameValidate();
+    docValidate();
+    contatoValidate();
+    emailValidate();
+    cidadeValidate();
+}
+
+submitButton.addEventListener ("click", (e)=> {
+   // e.preventDefault();
+    checkInputs();
+    console.log("oi")
+})
+ 
+  
+
+
+
 
 function setError(index){
     campos[index].style.border='3px solid #c63636';
@@ -186,7 +201,7 @@ function removeError(index){
 }
 
 
-function nameValidation(){
+function nameValidate(){
     if (campos[0].value.length < 6) 
     {
         setError(0);
@@ -195,7 +210,7 @@ function nameValidation(){
     }
 }
 
-function cpfValidate(){
+function docValidate(){
     if(campos[1].value.length != 11)
     {
         setError(1);
@@ -204,14 +219,36 @@ function cpfValidate(){
     }
 }
 
+function contatoValidate(){
+    if(campos[2].value.length <= 0)
+    {
+        setError(2);
+    } else {
+        removeError(2);
+    }
+}
+
 function emailValidate(){
     if(!emailRegex.test(campos[3].value))
     {
         setError(3);
-    } else {
+    }
+    else {
         removeError(3);
     }
 }
+
+function cidadeValidate(){
+    if(campos[4].value.length <= 0)
+    {
+        setError(4);
+    } else {
+        removeError(4);
+    }
+}
+
+
+
 
 </script>
 </html>
