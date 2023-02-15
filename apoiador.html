@@ -148,7 +148,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 <script>
-
 const nome = document.getElementById("nome")
 const doc = document.getElementById("doc")
 const contato = document.getElementById("contato")
@@ -259,6 +258,31 @@ function cidadeValidate(){
         removeError(4);
     }
 }
+
+// / HABILITAR ENVIO DE FORMULÁRIO
+
+const submitb = document.getElementById('submit')
+const inputsCorretos = {
+  nome: false,
+  doc: false,
+  contato: false,
+  email:false,  
+  cidade: false,
+}
+
+
+submitb.addEventListener('click', (e) => {
+  e.preventDefault()
+  const values = Object.values(inputsCorretos)
+  const anyFalse = values.filter((value) => value === false)
+
+  if(!anyFalse.length) {
+    alert('Formulário enviado com sucesso!')
+  } else (
+    alert('Preencha todos os campos')
+  )
+  
+})
 
 
 
