@@ -104,7 +104,7 @@
                             NOME:
                         </label>
                     <br>
-                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required" oninput=" nameValidate(0)">
+                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required">
                     <br>
                     <span class="span-required"> * Nome deve conter no mínimo 3 caracteres * </span>
                     </div>
@@ -186,7 +186,13 @@ const campos = document.querySelectorAll(".required");
 const spans = document.querySelectorAll(".span-required");
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-
+function resetForm(){
+    nome.value = '';
+    contato.value = '';
+    email.value = '';
+    assunto.value= '';
+    mensagem.value= '';
+}
     
 function checkInputs(){
     nameValidate();
