@@ -229,10 +229,12 @@
     </div>
 
     <h1 class="tituloApoiador">GOSTOU? GOSTARIA DE SE TORNAR UM APOIADOR?</h1>
-    <div class="cadastrarApoiador">
-      <input type="text" placeholder="ESCREVA SEU E-MAIL..." class="escreverEmail" id="email" name="email" />
-      <input type="submit" class="inscreverSe" onclick="enviarNewsletter();" />
-    </div>
+    <form action="pagina de ação" method="post" name="dados" onSubmit="return enviardados();">
+      <div class="cadastrarApoiador">
+        <input type="text" name="tx_email" id="tx_email" placeholder="ESCREVA SEU E-MAIL..." class="escreverEmail" />
+        <input type="submit" class="inscreverSe"/>
+      </div>
+    </form>
   </main>
   <footer class="rodape">
     <div class="infos">
@@ -254,21 +256,16 @@
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script>
-  function enviarNewsletter() {
-    swal({
-      title: "Você tem certeza?",
-      text: "Seu e-mail sera cadastrado na nossa newsletter, e receberá eventuais novidades!",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    }).then((willDelete) => {
-      if (willDelete) {
-        swal("Pronto! Seu e-mail foi cadastrado com sucesso!", {
-          icon: "success",
-        });
-      } else {
-        swal("Seu e-mail não foi cadastrado!");
-      }
-    });
+  function enviardados() {
+
+
+    if (document.dados.tx_email.value == "" ||
+      document.dados.tx_email.value.indexOf('@') == -1 ||
+      document.dados.tx_email.value.indexOf('.') == -1) {
+      alert("Preencha campo E-MAIL corretamente!");
+      document.dados.tx_email.focus();
+      return false;
+    }
+    return true;
   }
 </script>
