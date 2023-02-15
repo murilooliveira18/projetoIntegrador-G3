@@ -47,19 +47,21 @@
                 <label for="nome">
                     NOME:
                 </label><br>
-                <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever">
+                <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required" oninput="nameValidate(0)">
+                <span class="span-required"> * Nome deve conter no mínimo 3 caracteres * </span>
             </div>
             <div class="fale">
                 <label for="contato">
                     TELEFONE:
                 </label><br>
-                <input type="tel" placeholder="DDD988887777" id="contato" name="phone" class="escrever">
+                <input type="tel" placeholder="DDD988887777" id="contato" name="phone" class="escrever required" oninput="contatoValidate()">
+                <span class="span-required"> Informe um número para contato  </span>
             </div>  
             <div class="fale">
                 <label for="email">
                     E-MAIL:
                 </label><br>
-                <input type="email" placeholder="Digite seu e-mail" id="email" name="mailto" class="escrever">
+                <input type="email" placeholder="Digite seu e-mail" id="email" name="mailto" class="escrever required" oninput="emailValidate(2)">
                 <br>
                 <span class="span-required"> Digite um email válido </span>
             </div>
@@ -67,14 +69,16 @@
                 <label for="assunto">
                     ASSUNTO:
                 </label><br>
-                <input type="text" placeholder="Escreva o assunto" id="assunto" name="title" class="escrever">
+                <input type="text" placeholder="Escreva o assunto" id="assunto" name="title" class="escrever required"oninput="assuntoValidate()">
+                <span class="span-required"> Necessário informar assunto </span>
             </div>
             <div class="fale">
                 <label for="msg">
                     MENSAGEM:
                 </label><br>
-                <textarea name="mensagem" placeholder="Escreva sua mensagem ... " id="msg" name="mensage" class="mensage"cols="25" rows="10">
+                <textarea name="mensagem" placeholder="Escreva sua mensagem ... " id="msg" name="mensage" class="mensage required" rows="10" oninput="msgValidate()">
                 </textarea>
+                <span class="span-required"> Mínimo de 10 caracteres </span>
                 </div>
             <div class="div_formBotao">
                 <button type="submit" id="submit" class="formBotao">
@@ -100,18 +104,20 @@
                             NOME:
                         </label>
                     <br>
-                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever">
+                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required" oninput=" nameValidate(0)">
                     <br>
-                    <span class="span-required"> * Nome deve conter no mínimo 6 caracteres * </span>
+                    <span class="span-required"> * Nome deve conter no mínimo 3 caracteres * </span>
                     </div>
                     <div class="fale">
                         <label for="email">
                             E-MAIL:
                         </label><br>
-                    <input type="email" placeholder="Digite seu Melhor E-Mail" id="email" name="mailto" class="escrever">
+                    <input type="email" placeholder="Digite seu Melhor E-Mail" id="email" name="mailto" class="escrever required">
+                    <br>
+                    <span class="span-required"> * Digite um email válido * </span>
                     </div>
                     <div class="div_formBotao">
-                        <button type="submit" id="submit" class="formBotao">
+                        <button type="submit" id="submit"  class="formBotao">
                             ENVIAR
                         </button>
                     </div>
@@ -167,32 +173,37 @@
     </footer>  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
 <script>
 const nome = document.getElementById("nome")
-const cel = document.getElementById("cel")
+const contato = document.getElementById("contato")
 const email = document.getElementById("email")
-
+const assunto = document.getElementById("assunto")
+const menssagem = document.getElementById("msg")
 
 const form = document.getElementById("submit");
 const campos = document.querySelectorAll(".required");
 const spans = document.querySelectorAll(".span-required");
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/ ;
-    
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-form.addEventListener('click', (e) => {
-    e.preventDefault();
-    nameValidation();
-    cpfValidate();
+
+    
+function checkInputs(){
+    nameValidate();
+    contatoValidate();
     emailValidate();
+    assuntoValidate();
+    msgValidate();
+}
+
+
+form.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkInputs();
+    
 });
 
 
-function resetForm(){
-    nome.value = '';
-    cel.value = '';
-    email.value ='';
-   
-}
 
 function setError(index){
     campos[index].style.border='3px solid #c63636';
@@ -205,8 +216,9 @@ function removeError(index){
 }
 
 
-function nameValidation(){
-    if (campos[0].value.length < 6) 
+
+function nameValidate(index) {
+    if (campos[0].value.length < 3) 
     {
         setError(0);
     } else {
@@ -214,8 +226,8 @@ function nameValidation(){
     }
 }
 
-function cpfValidate(){
-    if(campos[1].value.length != 11)
+function contatoValidate(){
+    if(campos[1].value.length <= 0) 
     {
         setError(1);
     } else {
@@ -223,14 +235,35 @@ function cpfValidate(){
     }
 }
 
-function emailValidate(){
-    if(!emailRegex.test(campos[3].value))
+function emailValidate(index){
+    if(!emailRegex.test(campos[2].value))
+    {
+        setError(2);
+    }
+    else {
+        removeError(2);
+    }
+}
+
+function assuntoValidate() {
+    if (campos[3].value.length < 3) 
     {
         setError(3);
     } else {
         removeError(3);
     }
 }
+
+function msgValidate(){
+    if (campos[4].value.length < 10) 
+    {
+        setError(4);
+    } else {
+        removeError(4);
+    }
+}
+
+
 
 
 </script>
