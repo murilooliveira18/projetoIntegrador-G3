@@ -498,6 +498,9 @@ img.iconesRedeSocial {
 
 /* Tela materiais */
 
+#mais {
+  display: none;
+}
 
 .menu_selecionado {
   background: #39FA5A;
