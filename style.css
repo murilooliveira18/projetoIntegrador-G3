@@ -527,15 +527,11 @@ img.iconesRedeSocial {
 }
 
 .materiais_subtitulo {
-  
- 
   color: #166123;
   font-size: 24px;
   text-align: justify;
   padding: 80px;
 }
-
-
 
 .banner_imagem {
   padding: 20px 0;
@@ -547,7 +543,6 @@ img.iconesRedeSocial {
   align-items: center;
   min-height: 40vh;
   text-decoration: none;
- 
 }
 .materiais_description_section_I {
     position: relative;
@@ -558,8 +553,6 @@ img.iconesRedeSocial {
     z-index: 1;
     text-decoration: none;
 }
-
-
 
 .materiais_card1, .materiais_card2, .materiais_card3, .materiais_card4 {
     position: relative;
@@ -573,55 +566,41 @@ img.iconesRedeSocial {
     border-left: 1px solid rgba(5, 186, 0.5);
     padding: 30px;
     justify-content: end;
-    border-color: #22cf3f;
-       
+    border-color: #22cf3f; 
 }
 
 .materiais_card1 {
   background-image: url("imagens/azul.jpg");
   background-size: contain;
-
 }
 
 .materiais_card2 {
   background-image: url("imagens/verde.jpg");
   background-size: contain;
-
 }
 
 .materiais_card3 {
   background-image: url("imagens/vermelho.jpg");
   background-size: contain;
-
 }
 
 .materiais_card4 {
   background-image: url("imagens/amarelo.jpg");
   background-size: contain;
-
 }
 
 .materiais_description_services_title {
   margin-bottom: 16px;
   color: #166123;
-  text-align: center;
-  
-  
+  text-align: center;  
 }
 
 .materiais_texto {
   color: black;
   text-align: justify;
   text-decoration: none;
-  font-weight: bolder;
-  
+  font-weight: bolder; 
 }
-
-
-
-
-
-
 
 /* CSS da página Links Úteis */
 
