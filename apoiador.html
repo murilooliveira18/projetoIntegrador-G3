@@ -260,6 +260,31 @@ function cidadeValidate(){
     }
 }
 
+// / HABILITAR ENVIO DE FORMULÁRIO
+
+const submitb = document.getElementById('submit')
+const inputsCorretos = {
+  nome: false,
+  doc: false,
+  contato: false,
+  email:false,  
+  cidade: false,
+}
+
+
+submitb.addEventListener('click', (e) => {
+  e.preventDefault()
+  const values = Object.values(inputsCorretos)
+  const anyFalse = values.filter((value) => value === false)
+
+  if(!anyFalse.length) {
+    alert('Formulário enviado com sucesso!')
+  } else (
+    alert('Preencha todos os campos')
+  )
+  
+})
+
 
 
 
