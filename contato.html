@@ -199,21 +199,34 @@ function resetForm(){
     mensagem.value= '';
 }
 
+function checkInputs(){
+    nameValidate();
+    docValidate();
+    emailValidate();
+    assuntoValidate();
+    msgValidate();
+}
+
+
 function setError(index){
     campos[index].style.border='3px solid #c63636';
     spans[index].style.display = 'block';
 }
+
+function removeError2(index){
+    campos2[index].style.border='';
+    spans2[index].style.display = 'none';
+}
+
 
 function nameValidate(){
     if (campos[0].value.length < 6) 
     {
         setError(0);
         inputsCorretos.nome = false
-        
     } else {
         removeError(0);
         inputsCorretos.nome = true
-        
     }
 }
 

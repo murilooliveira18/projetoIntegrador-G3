@@ -158,7 +158,7 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 const submitButton = document.getElementById('submit');
-const inputAll = document.querySelectorAll("input");
+
 
 
 function resetForm(){
@@ -179,29 +179,6 @@ function checkInputs() {
 }
 
 
-function validateForm () {
-    inputAll.values !== ""
-
-    if(!inputAll.values){
-        console.log('ok')
-    } else {
-        console.log('error')
-    }
-}
-
-
-submitButton.addEventListener ("click", (e)=> {
-    e.preventDefault();
-    checkInputs();
-    validateForm();
-    resetForm();
-})
- 
-  
-
-
-
-
 function setError(index){
     campos[index].style.border='3px solid #c63636';
     spans[index].style.display = 'block';
@@ -217,10 +194,10 @@ function nameValidate(){
     if (campos[0].value.length < 6) 
     {
         setError(0);
-        
+        inputsCorretos.nome = false
     } else {
         removeError(0);
-        
+        inputsCorretos.nome = true
     }
 }
 
@@ -228,11 +205,10 @@ function docValidate(){
     if((campos[1].value.length !=11) && (campos[1].value.length !=14 ))
     {
         setError(1);
-        inputsCorretos.contato = false
-        
+        inputsCorretos.doc = false
     } else {
         removeError(1);
-        inputsCorretos.contato = false
+        inputsCorretos.doc = true
         
     }
 }
@@ -271,7 +247,6 @@ function cidadeValidate(){
     }
 }
 
-// / HABILITAR ENVIO DE FORMULÁRIO
 
 const submitb = document.getElementById('submit')
 const inputsCorretos = {
@@ -289,15 +264,12 @@ submitb.addEventListener('click', (e) => {
   const anyFalse = values.filter((value) => value === false)
 
   if(!anyFalse.length) {
-    alert('Formulário enviado com sucesso!')
-  } else (
-    alert('Preencha todos os campos')
-  )
-  
+    alert("Formulário enviado com sucesso!")
+    resetForm()
+  } else {
+    checkInputs()
+    alert("Preencha todos os campos")
+  }
 })
-
-
-
-
 </script>
 </html>
