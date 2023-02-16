@@ -284,7 +284,7 @@ header {
 
 .cadastrarApoiador {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0px 130px;
   margin-bottom: 100px;
@@ -295,7 +295,7 @@ header {
 }
 
 .escreverEmail {
-  width: 80%;
+  width: 70%;
   padding: 21px;
   border: none;
   background: #d9d9d9;
@@ -326,7 +326,7 @@ header {
 }
 
 .inscreverSe {
-  width: 30%;
+  width: 100%;
   padding: 20px;
   background: #39fa5a;
   color: #fff;

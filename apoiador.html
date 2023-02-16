@@ -157,9 +157,6 @@ const cidade = document.getElementById("cidade")
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-const submitButton = document.getElementById('submit');
-const inputAll = document.querySelectorAll("input");
-
 
 function resetForm(){
     nome.value = '';
@@ -177,28 +174,6 @@ function checkInputs() {
     emailValidate();
     cidadeValidate();
 }
-
-
-function validateForm () {
-    inputAll.values !== ""
-
-    if(!inputAll.values){
-        console.log('ok')
-    } else {
-        console.log('error')
-    }
-}
-
-
-submitButton.addEventListener ("click", (e)=> {
-    e.preventDefault();
-    checkInputs();
-    validateForm();
-    resetForm();
-})
- 
-  
-
 
 
 
@@ -240,7 +215,7 @@ function docValidate(){
 }
 
 function contatoValidate(){
-    if(campos[2].value.length <= 0) 
+    if((campos[2].value.length != 10) &&  (campos[2].value.length !=11))
     {
         setError(2);
         inputsCorretos.contato = false
@@ -273,7 +248,6 @@ function cidadeValidate(){
     }
 }
 
-// / HABILITAR ENVIO DE FORMULÁRIO
 
 const submitb = document.getElementById('submit')
 const inputsCorretos = {
@@ -291,15 +265,12 @@ submitb.addEventListener('click', (e) => {
   const anyFalse = values.filter((value) => value === false)
 
   if(!anyFalse.length) {
-    alert('Formulário enviado com sucesso!')
-  } else (
-    alert('Preencha todos os campos')
-  )
-  
+    alert("Obrigado(a) ^^ Formulário enviado com sucesso!")
+    resetForm()
+  } else {
+    checkInputs()
+    alert("Ops...Algo deu errado =/ Preencha os campos corretamente")
+  }
 })
-
-
-
-
 </script>
 </html>

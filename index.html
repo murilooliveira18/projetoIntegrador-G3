@@ -229,12 +229,10 @@
     </div>
 
     <h1 class="tituloApoiador">GOSTOU? GOSTARIA DE SE TORNAR UM APOIADOR?</h1>
-    <form action="pagina de ação" method="post" name="dados" onSubmit="return enviardados();">
       <div class="cadastrarApoiador">
-        <input type="text" name="tx_email" id="tx_email" placeholder="ESCREVA SEU E-MAIL..." class="escreverEmail" />
-        <input type="submit" class="inscreverSe"/>
-      </div>
-    </form>
+        <input type="text" name="tx_email" id="tx_email" placeholder="CLIQUE NO BOTÃO PARA SE TORNAR UM APOIADOR" class="escreverEmail" disabled/>
+        <a href="apoiador.html"><input type="submit" class="inscreverSe" value="SEJA UM APOIADOR"/>
+        </div></a>
   </main>
   <footer class="rodape">
     <div class="infos">
@@ -255,17 +253,3 @@
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-<script>
-  function enviardados() {
-
-
-    if (document.dados.tx_email.value == "" ||
-      document.dados.tx_email.value.indexOf('@') == -1 ||
-      document.dados.tx_email.value.indexOf('.') == -1) {
-      alert("Preencha campo E-MAIL corretamente!");
-      document.dados.tx_email.focus();
-      return false;
-    }
-    return true;
-  }
-</script>

@@ -23,7 +23,7 @@
                     <li class="menus"><a href="ecopontos.html"> Ecopontos</a></li>
                 </ul>
                 <ul>
-                    <li class="menus"><a href="apoiador.html"></a>Seja um apoiador</li>
+                    <li class="menus"><a href="apoiador.html">Seja um apoiador</a></li>
                 </ul>
                 <ul>
                     <li class="menus"><a href=linksuteis.html>Links Úteis</a></li>
@@ -105,7 +105,11 @@
                             NOME:
                         </label>
                     <br>
+<<<<<<< HEAD
                     <input type="text" placeholder="Digite seu nome" id="nomeinscreva" name="username" class="escrever required" oninput=" nomeinscrevaValidate(0)">
+=======
+                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required">
+>>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
                     <br>
                     <span class="span-required2"> * Nome deve conter no mínimo 3 caracteres * </span>
                     </div>
@@ -177,6 +181,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 <script>
+<<<<<<< HEAD
 
 
 // Increva-se em nossa newsletter
@@ -195,6 +200,23 @@ const emailRegex2 = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 function resetForm2(){
     nomeinscreva.value = '';
     emailinscreva.value = '';
+=======
+const nome = document.getElementById("nome")
+const contato = document.getElementById("contato")
+const email = document.getElementById("email")
+const assunto = document.getElementById("assunto")
+const mensagem = document.getElementById("msg")
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+function resetForm(){
+    nome.value = '';
+    contato.value = '';
+    email.value = '';
+    assunto.value= '';
+    mensagem.value= '';
+>>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
 }
     
 function checkInputs2() {
@@ -214,6 +236,7 @@ function validateForm2 () {
 }
 
 
+<<<<<<< HEAD
 submitButton2.addEventListener ("click", (e)=> {
     e.preventDefault();
     checkInputs2();
@@ -225,6 +248,12 @@ submitButton2.addEventListener ("click", (e)=> {
 function setError2(index){
     campos2[index].style.border='3px solid #c63636';
     spans2[index].style.display = 'block';
+=======
+
+function setError(index){
+    campos[index].style.border='3px solid #c63636';
+    spans[index].style.display = 'block';
+>>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
 }
 
 function removeError2(index){
@@ -236,6 +265,7 @@ function removeError2(index){
 function nomeinscrevaValidate(){
     if (campos2[0].value.length < 6) 
     {
+<<<<<<< HEAD
         setError2(0);
         inputsCorretos2.nomeinscreva = false
         
@@ -243,12 +273,20 @@ function nomeinscrevaValidate(){
         removeError2(0);
         inputsCorretos2.nomeinscreva = true
         
+=======
+        setError(0);
+        inputsCorretos.nome = false
+    } else {
+        removeError(0);
+        inputsCorretos.nome = true
+>>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
     }
 }
 
 function emailinscrevaValidate(){
     if(!emailRegex2.test(campos2[1].value))
     {
+<<<<<<< HEAD
         setError2(1);
         inputsCorretos2.emailinscreva = false
     }
@@ -279,8 +317,71 @@ submitb.addEventListener('click', (e) => {
   )
   
 })
+=======
+        setError(1);
+        inputsCorretos.contato = false
+    } else {
+        removeError(1);
+        inputsCorretos.contato = true
+    }
+}
 
+function emailValidate(index){
+    if(!emailRegex.test(campos[2].value))
+    {
+        setError(2);
+        inputsCorretos.email = false
+    }
+    else {
+        removeError(2);
+        inputsCorretos.email = true
+    }
+}
 
+function assuntoValidate() {
+    if (campos[3].value.length < 3) 
+    {
+        setError(3);
+        inputsCorretos.assunto = false
+    } else {
+        removeError(3);
+        inputsCorretos.assunto = true
+    }
+}
 
+function msgValidate(){
+    if (campos[4].value.length < 10) 
+    {
+        setError(4);
+        inputsCorretos.mensagem = false
+    } else {
+        removeError(4);
+        inputsCorretos.mensagem = true
+    }
+}
+
+const submitb = document.getElementById('submit')
+const inputsCorretos = {
+  nome: false,
+  contato: false,
+  email:false,
+  assunto: false,  
+  mensagem: false,
+}
+>>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
+
+submitb.addEventListener('click', (e) => {
+  e.preventDefault()
+  const values = Object.values(inputsCorretos)
+  const anyFalse = values.filter((value) => value === false)
+
+  if(!anyFalse.length) {
+    alert("Yuuup!!! Mensagem enviada com Sucesso.")
+     resetForm()
+  } else {
+    checkInputs()
+    alert("Ops...Algo deu errado =/")
+  }
+})
 </script>
 </html>
