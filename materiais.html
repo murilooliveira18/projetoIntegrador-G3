@@ -147,14 +147,34 @@
             <h2 class="tituloEmpresas">
                 EMPRESAS PARCEIRAS
             </h2>
-        <div class="empresasParceiras">
-                <img src="imagens/Vector 3.png" alt="Imagem seta para esquerda" class="seta">
-                <img src="imagens/proz_logo.jpg" href="https://prozeducacao.com.br/" alt="Logo Proz Educação" class="logo-empresasParceira">
-                <img src="imagens/wwf_logo.png" href="https://www.wwf.org.br/" alt="Logo WWF" class="logo-empresasParceira">
-                <img src="imagens/green_logo.png" href="https://www.greenpeace.org/brasil/" alt="Logo Greenpeace" class="logo-empresasParceira">
-                <img src="imagens/akatu_logo.png" href="https://akatu.org.br/" alt="Logo Akatu" class="logo-empresasParceira">
-                <img src="imagens/Vector 3 (1).png" alt="Imagem seta para direita" class="seta">
-        </div>
+            <div class="empresasParceiras">
+                <swiper-container>
+                    <swiper-slide>
+                        <div class="empresasParceiras">
+                            <a href="https://prozeducacao.com.br/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/proz.jpeg" alt="empresa-parceira1" class="imgEmpresaParceira" /></a>
+                            <a href="https://www.wwf.org.br/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/wwf.jpeg" alt="empresa-parceira2" class="imgEmpresaParceira" /></a>
+                            <a href="https://www.greenpeace.org/brasil/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/greenpeace.jpeg" alt="empresa-parceira3" class="imgEmpresaParceira" /></a>
+                            <a href="https://akatu.org.br/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/akatu.jpeg" alt="empresa-parceira4" class="imgEmpresaParceira" /></a></div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="empresasParceiras">
+                            <a href="https://progambiental.com.br/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/prog_ambiental.png" alt="empresa-parceira1"
+                                    class="imgEmpresaParceira" /></a>
+                            <a href="https://biorevita.com.br/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/biorevita.png" alt="empresa-parceira2" class="imgEmpresaParceira" /></a>
+                            <a href="https://greenviewgv.com.br/" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/greenview.png" alt="empresa-parceira3" class="imgEmpresaParceira" /></a>
+                            <a href="https://www.lelisambiental.com.br/Default.asp" target="_blank" class="linkEmpresa"><img
+                                    src="imagens/lelisAmbiental.png" alt="empresa-parceira4"
+                                    class="imgEmpresaParceira" /></a></div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
 
 
 
@@ -175,7 +195,7 @@
         </div>
     </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script>
     VanillaTilt.init(document.querySelectorAll(".materiais_card1", ".materiais_card2"), {
         max: 25,
