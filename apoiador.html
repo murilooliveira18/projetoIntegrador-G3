@@ -64,7 +64,7 @@
                     <label for="contato">
                         DDD + CELULAR
                     </label><br>
-                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" oninput="contactValidate()">
+                    <input type="tel" placeholder="11988887777" id="contato" name="contact" class="dados required" oninput="contactValidate()">
                     <br>
                     <span class="span-required"> Informe um número para contato  </span>
                 </div>
@@ -207,7 +207,7 @@ function docValidate(){
 }
 
 function contactValidate(){
-    if(campos[2].value.length <= 0) 
+    if(campos[1].value.length <= 0) 
     {
         setError(2);
         inputsCorretos.contato = false
