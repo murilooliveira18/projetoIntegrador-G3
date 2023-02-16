@@ -290,9 +290,12 @@ submitb.addEventListener('click', (e) => {
 
   if(!anyFalse.length) {
     alert('Formulário enviado com sucesso!')
-  } else (
+    resetForm()
+    
+  } else {
+    checkInputs()
     alert('Preencha todos os campos')
-  )
+}
   
 })
   
