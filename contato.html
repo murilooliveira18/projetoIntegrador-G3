@@ -105,11 +105,7 @@
                             NOME:
                         </label>
                     <br>
-<<<<<<< HEAD
                     <input type="text" placeholder="Digite seu nome" id="nomeinscreva" name="username" class="escrever required" oninput=" nomeinscrevaValidate(0)">
-=======
-                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required">
->>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
                     <br>
                     <span class="span-required2"> * Nome deve conter no mínimo 3 caracteres * </span>
                     </div>
@@ -181,26 +177,9 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 <script>
-<<<<<<< HEAD
 
+// Fale conosco
 
-// Increva-se em nossa newsletter
-
-const nomeinscreva = document.getElementById("nomeinscreva")
-const emailinscreva = document.getElementById("emailinscreva")
-
-const form2 = document.getElementById("submit2");
-const campos2 = document.querySelectorAll(".required");
-const spans2 = document.querySelectorAll(".span-required2");
-const submitButton2 = document.getElementById('submit2');
-const emailRegex2 = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-
-
-function resetForm2(){
-    nomeinscreva.value = '';
-    emailinscreva.value = '';
-=======
 const nome = document.getElementById("nome")
 const contato = document.getElementById("contato")
 const email = document.getElementById("email")
@@ -216,109 +195,29 @@ function resetForm(){
     email.value = '';
     assunto.value= '';
     mensagem.value= '';
->>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
 }
-    
-function checkInputs2() {
-    nomeinscrevaValidate();
-    emailinscrevaValidate();
-    
-}
-
-function validateForm2 () {
-    inputAll.values !== ""
-
-    if(!inputAll.values){
-        console.log('ok')
-    } else {
-        console.log('error')
-    }
-}
-
-
-<<<<<<< HEAD
-submitButton2.addEventListener ("click", (e)=> {
-    e.preventDefault();
-    checkInputs2();
-    validateForm2();
-    resetForm2();
-})
- 
-
-function setError2(index){
-    campos2[index].style.border='3px solid #c63636';
-    spans2[index].style.display = 'block';
-=======
 
 function setError(index){
     campos[index].style.border='3px solid #c63636';
     spans[index].style.display = 'block';
->>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
 }
 
-function removeError2(index){
-    campos2[index].style.border='';
-    spans2[index].style.display = 'none';
-}
-
-
-function nomeinscrevaValidate(){
-    if (campos2[0].value.length < 6) 
+function nameValidate(){
+    if (campos[0].value.length < 6) 
     {
-<<<<<<< HEAD
-        setError2(0);
-        inputsCorretos2.nomeinscreva = false
-        
-    } else {
-        removeError2(0);
-        inputsCorretos2.nomeinscreva = true
-        
-=======
         setError(0);
         inputsCorretos.nome = false
+        
     } else {
         removeError(0);
         inputsCorretos.nome = true
->>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
+        
     }
 }
 
-function emailinscrevaValidate(){
-    if(!emailRegex2.test(campos2[1].value))
-    {
-<<<<<<< HEAD
-        setError2(1);
-        inputsCorretos2.emailinscreva = false
-    }
-    else {
-        removeError2(1);
-        inputsCorretos2.emailinscreva = true
-    }
-}
-
-// / HABILITAR ENVIO DE FORMULÁRIO
-
-const submitb = document.getElementById('submit2')
-const inputsCorretos2 = {
-  nomeinscreva: false,
-  emailinscreva: false,  
-
-}
-
-submitb.addEventListener('click', (e) => {
-  e.preventDefault()
-  const values = Object.values(inputsCorretos2)
-  const anyFalse = values.filter((value) => value === false)
-
-  if(!anyFalse.length) {
-    alert('Formulário enviado com sucesso!')
-  } else (
-    alert('Preencha todos os campos')
-  )
-  
-})
-=======
-        setError(1);
+function docValidate(){
+    if((campos[1].value.length !=11) && (campos[1].value.length !=14 ))
+    {setError(1);
         inputsCorretos.contato = false
     } else {
         removeError(1);
@@ -368,7 +267,6 @@ const inputsCorretos = {
   assunto: false,  
   mensagem: false,
 }
->>>>>>> 9ff30444bb102601ad3b52f1d3d7574af952f7c5
 
 submitb.addEventListener('click', (e) => {
   e.preventDefault()
@@ -383,5 +281,111 @@ submitb.addEventListener('click', (e) => {
     alert("Ops...Algo deu errado =/")
   }
 })
+
+// Increva-se em nossa newsletter
+
+const nomeinscreva = document.getElementById("nomeinscreva")
+const emailinscreva = document.getElementById("emailinscreva")
+
+
+const form2 = document.getElementById("submit2");
+const campos2 = document.querySelectorAll(".required");
+const spans2 = document.querySelectorAll(".span-required2");
+const submitButton2 = document.getElementById('submit2');
+const emailRegex2 = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+
+function resetForm2(){
+    nomeinscreva.value = '';
+    emailinscreva.value = '';
+}
+
+    
+function checkInputs2() {
+    nomeinscrevaValidate();
+    emailinscrevaValidate();
+    
+}
+
+function validateForm2 () {
+    inputAll.values !== ""
+
+    if(!inputAll.values){
+        console.log('ok')
+    } else {
+        console.log('error')
+    }
+}
+
+
+submitButton2.addEventListener ("click", (e)=> {
+    e.preventDefault();
+    checkInputs2();
+    validateForm2();
+    resetForm2();
+})
+ 
+
+function setError2(index){
+    campos2[index].style.border='3px solid #c63636';
+    spans2[index].style.display = 'block';
+}
+
+
+
+function removeError2(index){
+    campos2[index].style.border='';
+    spans2[index].style.display = 'none';
+}
+
+
+function nomeinscrevaValidate(){
+    if (campos2[0].value.length < 6) 
+    {
+        setError2(0);
+        inputsCorretos2.nomeinscreva = false
+        
+    } else {
+        removeError2(0);
+        inputsCorretos2.nomeinscreva = true
+       
+    }
+}
+
+function emailinscrevaValidate(){
+    if(!emailRegex2.test(campos2[0].value))
+    {
+        setError2(0);
+        inputsCorretos2.emailinscreva = false
+    }
+    else {
+        removeError2(0);
+        inputsCorretos2.emailinscreva = true
+    }
+}
+
+// / HABILITAR ENVIO DE FORMULÁRIO FALE CONOSCO
+
+const submitb2 = document.getElementById('submit2')
+const inputsCorretos2 = {
+  nomeinscreva: false,
+  emailinscreva: false,  
+
+}
+
+submitb2.addEventListener('click', (e) => {
+  e.preventDefault()
+  const values = Object.values(inputsCorretos2)
+  const anyFalse = values.filter((value) => value === false)
+
+  if(!anyFalse.length) {
+    alert('Formulário enviado com sucesso!')
+  } else (
+    alert('Preencha todos os campos')
+  )
+  
+})
+        
+
 </script>
 </html>
