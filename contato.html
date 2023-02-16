@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biome - Página Contato</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html">
+                <img src="imagens/biome-logo.png" alt="logo-biome" class="logoTopo"></a>
+                <nav class="menuItens">
+                <ul>
+                    <li class="menus"><a href="index.html">Quem Somos</a></li>
+                </ul>
+                 <ul>
+                    <li class="menus"><a href="materiais.html">Materiais</a></li>
+                </ul>
+                <ul>
+                    <li class="menus"><a href="ecopontos.html"> Ecopontos</a></li>
+                </ul>
+                <ul>
+                    <li class="menus"><a href="apoiador.html">Seja um apoiador</a></li>
+                </ul>
+                <ul>
+                    <li class="menus"><a href=linksuteis.html>Links Úteis</a></li>
+                </ul>
+                <ul>
+                    <li class="menu_selecionado"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="div-imagemTopo" >
+            <img src="imagens/meio_ambiente.jpg"   alt="imagem do topo" class="imagemTopoContato" >
+        </div>
+        <h1 class="faleConosco">
+            FALE CONOSCO
+        </h1>
+        <div class="formFale">
+        <form action="">
+            <div class="fale">
+                <label for="nome">
+                    NOME:
+                </label><br>
+                <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required" oninput="nameValidate()">
+                <span class="span-required"> * Nome deve conter no mínimo 3 caracteres * </span>
+            </div>
+            <div class="fale">
+                <label for="contato">
+                    TELEFONE:
+                </label><br>
+                <input type="tel" placeholder="DDD988887777" id="contato" name="phone" class="escrever required" oninput="contatoValidate()">
+                <span class="span-required"> Informe um número para contato  </span>
+            </div>  
+            <div class="fale">
+                <label for="email">
+                    E-MAIL:
+                </label><br>
+                <input type="email" placeholder="Digite seu e-mail" id="email" name="mailto" class="escrever required" oninput="emailValidate()">
+                <br>
+                <span class="span-required"> Digite um email válido </span>
+            </div>
+            <div class="fale">
+                <label for="assunto">
+                    ASSUNTO:
+                </label><br>
+                <input type="text" placeholder="Escreva o assunto" id="assunto" name="title" class="escrever required"oninput="assuntoValidate()">
+                <span class="span-required"> Necessário informar assunto </span>
+            </div>
+            <div class="fale">
+                <label for="msg">
+                    MENSAGEM:
+                </label><br>
+                <textarea name="mensagem" placeholder="Escreva sua mensagem ... " id="msg" name="mensage" class="mensage required" cols="25" rows="10" oninput="msgValidate()">
+                </textarea>
+                <span class="span-required"> Mínimo de 10 caracteres </span>
+                </div>
+            <div class="div_formBotao">
+                <button type="submit" id="submit" class="formBotao">
+                    ENVIAR
+                </button>
+            </div>
+        </form>
+        </div>
+        
+        <div class="novidades">
+            <div class="imagensNovidades">
+                <img src="imagens/newletter.jpg" alt="newletter" class="New" >
+            </div>
+            <div>
+                <form action="">
+                <div>
+                    <h1 class="tituloNovidades">
+                        INSCREVA-SE <br> EM NOSSA NEWSLETTER
+                    </h1>                
+                </div>
+                <div>
+                    <form method="post" action="https://forsubmit.co/isabela.cirino23@gmail.com">
+                    <div class="fale">
+                        <label for="nomeinscreva">
+                            NOME:
+                        </label>
+                    <br>
+                    <input type="text" placeholder="Digite seu nome" id="nomeinscreva" required name="username" class="escrever">
+                    </div>
+                    <div class="fale">
+                        <label for="emailinscreva">
+                            E-MAIL:
+                        </label><br>
+                    <input type="email" placeholder="Digite seu Melhor E-Mail" id="emailinscreva" required name="mailto" class="escrever">
+                    </div>
+                    <div class="div_formBotao">
+                        <button type="submit" id="lettersubmit"  class="formBotao">
+                            ENVIAR
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </form>
+        </div>
+
+        <h1 class="tituloEmpresas">
+            EMPRESAS PARCEIRAS
+        </h1>
+        
+        <div class="empresasParceiras">
+            <swiper-container>
+              <swiper-slide>
+                <div class="empresasParceiras">
+                  <a href="https://prozeducacao.com.br/" target="_blank" class="linkEmpresa"><img src="imagens/proz.jpeg"
+                      alt="empresa-parceira1" class="imgEmpresaParceira" /></a>
+                  <a href="https://www.wwf.org.br/" target="_blank" class="linkEmpresa"><img src="imagens/wwf.jpeg"
+                      alt="empresa-parceira2" class="imgEmpresaParceira" /></a>
+                  <a href="https://www.greenpeace.org/brasil/" target="_blank" class="linkEmpresa"><img
+                      src="imagens/greenpeace.jpeg" alt="empresa-parceira3" class="imgEmpresaParceira" /></a>
+                  <a href="https://akatu.org.br/" target="_blank" class="linkEmpresa"><img src="imagens/akatu.jpeg"
+                      alt="empresa-parceira4" class="imgEmpresaParceira" /></a></div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="empresasParceiras">
+                  <a href="https://progambiental.com.br/" target="_blank" class="linkEmpresa"><img
+                      src="imagens/prog_ambiental.png" alt="empresa-parceira1" class="imgEmpresaParceira" /></a>
+                  <a href="https://biorevita.com.br/" target="_blank" class="linkEmpresa"><img src="imagens/biorevita.png"
+                      alt="empresa-parceira2" class="imgEmpresaParceira" /></a>
+                  <a href="https://greenviewgv.com.br/" target="_blank" class="linkEmpresa"><img src="imagens/greenview.png"
+                      alt="empresa-parceira3" class="imgEmpresaParceira" /></a>
+                  <a href="https://www.lelisambiental.com.br/Default.asp" target="_blank" class="linkEmpresa"><img
+                      src="imagens/lelisAmbiental.png" alt="empresa-parceira4" class="imgEmpresaParceira" /></a></div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+
+          
+        <h1 class="tituloApoiador">GOSTOU? GOSTARIA DE SE TORNAR UM APOIADOR?</h1>
+        <div class="cadastrarApoiador">
+            <input type="text" name="tx_email" id="tx_email" placeholder="CLIQUE NO BOTÃO PARA SE TORNAR UM APOIADOR"
+                class="escreverEmail" disabled />
+            <a href="apoiador.html"><input type="submit" class="inscreverSe" value="SEJA UM APOIADOR" />
+        </div></a>
+
+    </main>
+    <footer class="rodape">
+        <div class="infos">
+            <span class="infosExtras">Política de privacidade | Informações | Contato | Seja um apoiador | Links utéis</span>
+        </div>
+        <div class="copy">
+            <p class="textoCopy">© 2022 Biome. Todos os direitos reservados.</p>
+            <div class="redesSociais">
+                <img src="imagens/instagram 1.png" alt="logo-instagram" class="iconesRedeSocial">
+                <img src="imagens/twitter 1.png" alt="logo-twitter" class="iconesRedeSocial">
+                <img src="imagens/youtube 1.png" alt="logo-youtube" class="iconeYoutube">
+                <img src="imagens/logotipo-do-linkedin 1.png" alt="logo-linkedin" class="iconesRedeSocial">
+            </div>
+        </div>
+    </footer>  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+<script>
+
+const nome = document.getElementById('nome')
+const contato = document.getElementById('contato')
+const email = document.getElementById('email')
+const assunto = document.getElementById('assunto')
+const mensagem = document.getElementById('msg')
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+function resetForm(){
+    nome.value = '';
+    contato.value = '';
+    email.value = '';
+    assunto.value = '';
+    mensagem.value= '';
+}
+
+function checkInputs() {
+    nameValidate();
+    contatoValidate();
+    emailValidate();
+    assuntoValidate();
+    msgValidate();
+}
+
+
+function setError(index){
+    campos[index].style.border='3px solid #c63636';
+    spans[index].style.display = 'block';
+}
+
+function removeError(index){
+    campos[index].style.border='';
+    spans[index].style.display = 'none';
+}
+
+
+function nameValidate(){
+    if (campos[0].value.length < 3) 
+    {
+        setError(0);
+        inputsCorretos.nome = false
+    } else {
+        removeError(0);
+        inputsCorretos.nome = true
+    }
+}
+
+function contatoValidate(){
+    if((campos[1].value.length !=10) && (campos[1].value.length !=11))
+    {setError(1);
+        inputsCorretos.contato = false
+    } else {
+        removeError(1);
+        inputsCorretos.contato = true
+    }
+}
+
+function emailValidate(){
+    if(!emailRegex.test(campos[2].value))
+    {
+        setError(2);
+        inputsCorretos.email = false
+    }
+    else {
+        removeError(2);
+        inputsCorretos.email = true
+    }
+}
+
+function assuntoValidate() {
+    if (campos[3].value.length < 5) 
+    {
+        setError(3);
+        inputsCorretos.assunto = false
+    } else {
+        removeError(3);
+        inputsCorretos.assunto = true
+    }
+}
+
+function msgValidate(){
+    if (campos[4].value.length < 10) 
+    {
+        setError(4);
+        inputsCorretos.mensagem = false
+    } else {
+        removeError(4);
+        inputsCorretos.mensagem = true
+    }
+}
+
+
+const submitb = document.getElementById('submit')
+const inputsCorretos = {
+  nome: false,
+  contato: false,
+  email:false,
+  assunto: false,  
+  mensagem: false,
+}
+
+submitb.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const values = Object.values(inputsCorretos)
+  const anyFalse = values.filter((value) => value === false)
+
+  if(!anyFalse.length) {
+    alert("Yuuup!!! Mensagem enviada com Sucesso.")
+     resetForm()
+  } else {
+    checkInputs()
+    alert("Ops...Algo deu errado =/")
+  }
+
+})
+
+
+</script>
+
+</html>
