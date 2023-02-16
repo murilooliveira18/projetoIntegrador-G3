@@ -1,0 +1,753 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}
+
+.menu {
+  background: #1c7a2b;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoTopo {
+  width: 85px;
+}
+
+.menuSelecionado {
+  background: #39fa5a;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.menuItens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menus {
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0 20px;
+}
+
+.menus>a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuSelecionado {
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menuSelecionado:hover {
+  background: #166123;
+  color: #fff;
+}
+
+.menus:hover {
+  opacity: 0.7;
+}
+
+.bannerPrincipal {
+  width: 100%;
+}
+
+.tituloProjeto {
+  color: #166123;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.conhecaNossoProjeto {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerConhecaNossoProjeto {
+  width: 40%;
+  padding: 0 30px;
+}
+
+.textoConhecaNossoProjeto {
+  width: 75%;
+  font-size: 24px;
+  color: #417a4a;
+  text-align: justify;
+}
+
+.tituloImpactos {
+  color: #166123;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.topicosImpactos,
+.topicosBeneficios {
+  padding: 20px 0px;
+}
+
+.tituloNovidades {
+  color: #166123;
+  text-align: center;
+  padding-right: 50px 0px;
+  font-size: 40px;
+}
+
+.impactosCausados {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.novidades {
+  width: 94%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background-color: rgb(229, 241, 242);
+  border-radius: 50px;  
+ }
+
+
+.faleConosco {
+  display: flex;
+  justify-content: center;
+  color: #166123;
+  padding: 50px 20px 20px;
+  font-size: 40px;
+}
+
+.formFale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 2rem;
+  border: 10%;
+  min-width: 50%;
+}
+
+.textoNovidadeds {
+  width: 50%;
+  padding-right: 50px;
+  font-size: 24px;
+  color: #417a4a;
+}
+
+.textoImpactos {
+  width: 50%;
+  padding-right: 50px;
+  font-size: 24px;
+  color: #417a4a;
+  text-align: justify;
+}
+
+.imagensImpactos {
+  width: 30%;
+}
+
+.imagensNovidades {
+  width: 35%;
+}
+
+.bannerImpactos:first-child {
+  padding-top: 0;
+}
+
+.bannerImpactos {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.New {
+  width: 100%;
+  height: 100%;
+  border: thin solid;
+  border-color: aqua;
+}
+
+.tituloBeneficios {
+  color: #166123;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.beneficiosDaEducacao {
+  padding: 100px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.textoBeneficios {
+  color: #166123;
+  font-size: 24px;
+  text-align: justify;
+}
+
+.textoEducacaoAmbiental {
+  color: #166123;
+  font-size: 24px;
+  text-align: justify;
+  padding: 80px;
+}
+
+.imagemBeneficios {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerBeneficios {
+  width: 60%;
+}
+
+.tituloObjetivos {
+  color: #166123;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.objetivoDaEducacao {
+  display: flex;
+  justify-content: center;
+}
+
+.listaObjetivos {
+  color: #166123;
+  font-size: 26px;
+  padding: 20px 0px;
+}
+
+.tituloEmpresas {
+  color: #166123;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.empresasParceiras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo-empresasParceira {
+  width: 130px;
+  border: 10px;
+  cursor: pointer;
+}
+
+.seta {
+  width: 20px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tituloApoiador {
+  color: #166123;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.faleConosco {
+  color: #166123;
+  text-align: center;
+  padding: 50px;
+  font-size: 40px;
+}
+
+.cadastrarApoiador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 130px;
+  margin-bottom: 100px;
+}
+
+.formularioApoiador {
+  width: 100%;
+}
+
+.escreverEmail {
+  width: 70%;
+  padding: 21px;
+  border: none;
+  background: #d9d9d9;
+}
+
+.escrever {
+  width: 450px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  background: #d9d9d9;
+  box-shadow: -3px 5px 3px rgb(130, 129, 129);
+  transition: 0.3s;
+}
+
+.escrever focus {
+  border-color: #417a4a;
+}
+
+.mensage {
+  width: 450px;
+  padding: 30px;
+  border-radius: 5px;
+  outline: none;
+  background: #d9d9d9;
+  transition: 0.3s;
+  box-shadow: -3px 5px 3px rgb(130, 129, 129);
+}
+
+.inscreverSe {
+  width: 100%;
+  padding: 20px;
+  background: #39fa5a;
+  color: #fff;
+  border: 1px solid #39fa5a;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.linkEmpresa {
+  width: 10%;
+}
+
+.imgEmpresaParceira {
+  width: 100%;
+}
+
+.rodape {
+  background: #1c7a2b;
+  padding: 40px 0px;
+}
+
+.infos {
+  display: flex;
+  justify-content: center;
+}
+
+.infosExtras {
+  color: #fff;
+  font-size: 24px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.copy {
+  color: #fff;
+  display: flex;
+  padding-top: 50px;
+  font-weight: lighter;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.textoCopy {
+  padding-right: 50px;
+}
+
+.fale {
+  padding: 10px;
+  color: #417a4a;
+ 
+}
+
+img.iconesRedeSocial {
+  cursor: pointer;
+}
+
+.redesSociais {
+  display: flex;
+  align-items: center;
+}
+
+.iconeYoutube {
+  cursor: pointer;
+  width: 25px;
+  padding: 0 5px;
+}
+
+.iconesRedeSocial {
+  width: 20px;
+  padding: 0 5px;
+}
+
+.tituloForm {
+  display: flex;
+  justify-content: center;
+  color: #166123;
+  padding: 50px 20px 20px;
+  font-size: 40px;
+}
+
+.formCadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 2rem;
+  border: 10%;
+  min-width: 30%;
+}
+
+.dados {
+  width: 450px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  background: #d9d9d9;
+  box-shadow: -3px 5px 3px rgb(130, 129, 129);
+  transition: 0.3s;
+}
+
+.dados:focus {
+  border-color: #417a4a;
+}
+
+.formDados {
+  padding: 15px;
+  color: #417a4a;
+}
+
+.formBotao {
+  padding: 20px 80px;
+  background: #39fa5a;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formBotao:hover {
+  background: #166123;
+}
+
+.div_imagemParceria {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 98%;
+  height: 460px;
+  background-image: url('imagens/floresta.jpg');
+  background-size: cover;
+  filter: blur(0.3px);
+}
+
+
+.txt-Parceria{
+display: flex;
+justify-content: center;
+text-align: center;
+padding: 10px;
+margin: 20px;
+color:white;
+text-shadow: -3px 5px 3px black;
+}
+
+
+.div-imagemTopo {
+  display: flex;
+  justify-content: center;
+}
+
+
+.imagemTopoContato{
+  width: 100%;
+  height: 620px;
+ }
+
+ 
+.imagemTopo {
+  padding: 5px;
+  border-radius: 100px;
+  width: 100%;
+  height: 540px;
+  margin-top: 8%;
+}
+
+.div_formBotao {
+  display: flex;
+  justify-content: center;
+}
+
+.botaoFormulario {
+  display: flex;
+  justify-content: center;
+}
+
+.span-required {
+  font-size: 18px;
+  margin: 3px 0 0 1px;
+  display: none;
+  padding: 5px;
+  color: rgba(184, 16, 16, 0.851);
+}
+
+
+/* Tela materiais */
+
+#mais {
+  display: none;
+}
+
+.menu_selecionado {
+  background: #39FA5A;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.menu_selecionado {
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.menu_selecionado:hover {
+  background: #166123;
+  color: #fff;
+}
+
+
+.materiais_main_title {
+  
+  color: #166123;
+  text-align: center;
+  padding: 180px 0 0 0;
+  font-size: 40px;
+}
+
+.materiais_subtitulo {
+  color: #166123;
+  font-size: 24px;
+  text-align: justify;
+  padding: 80px;
+}
+
+.banner_imagem {
+  padding: 20px 0;
+  width: 100%;
+}
+.teste_posicao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  text-decoration: none;
+}
+.materiais_description_section_I {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.materiais_card1, .materiais_card2, .materiais_card3, .materiais_card4 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    align-items: center;
+    border-top: 1px solid rgba(25, 255, 0.5);
+    border-left: 1px solid rgba(5, 186, 0.5);
+    padding: 30px;
+    justify-content: end;
+    border-color: #22cf3f; 
+}
+
+.materiais_card1 {
+  background-image: url("imagens/azul.jpg");
+  background-size: contain;
+}
+
+.materiais_card2 {
+  background-image: url("imagens/verde.jpg");
+  background-size: contain;
+}
+
+.materiais_card3 {
+  background-image: url("imagens/vermelho.jpg");
+  background-size: contain;
+}
+
+.materiais_card4 {
+  background-image: url("imagens/amarelo.jpg");
+  background-size: contain;
+}
+
+.materiais_description_services_title {
+  margin-bottom: 16px;
+  color: #166123;
+  text-align: center;  
+}
+
+.materiais_texto {
+  color: black;
+  text-align: justify;
+  text-decoration: none;
+  font-weight: bolder; 
+}
+
+/* CSS da página Links Úteis */
+
+.links{
+    color: #166123;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 200px;
+    font-size: 40px;
+}
+
+.linksAjuda{
+    padding: 0px;
+    display: flex;
+    text-align: justify;
+}
+
+.texto_ajuda {
+    display: inline-block;
+    text-indent: 20px;
+    margin: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    text-align: justify
+}
+
+.subtitle1 {
+    text-align: center;
+}
+
+.subtitle2 {
+    text-align: center;
+    padding-top: 400px;
+}
+
+.link_description_section_I {
+    display: flex;
+    gap: 200px;
+    margin-top: 90px;
+}
+
+.link_description_section_II {
+    display: flex;
+    gap: 200px;
+    margin-top: 70px;
+}
+
+.link_description_services_one, .link_description_services_two {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    padding-left: 225px;
+    justify-content: end; 
+}
+
+.link_description_services_three, .link_description_services_four {
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 225px;
+    padding-bottom: 300px;
+    justify-content: end; 
+}
+
+.banner_imagem {
+    padding: 50px;
+    width: 190px;
+    height: 65px;
+}
+
+.banner_imagem2 {
+    padding: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.banner_imagem3 {
+    padding: 50px;
+    width: 180px;
+    height: 100px;
+}
+
+.banner_imagem4 {
+    padding: 50px;
+    width: 240px;
+    height: 75px;
+}
+
+.link_description_services_title {
+    margin-bottom: 16px;
+    color: #166123;
+    text-align: center;
+}
+
+.link_texto {
+    display: inline-block;
+    color: #166123;
+    text-align: justify;
+    margin-bottom: 90px;
+    text-indent: 20px;
+}
+
+.ecopontosParaDescarte {
+  padding: 20px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ecopontosLinha {
+  width: 45%;
+}
+
+.imagemEcoponto {
+  width: 100%;
+  height: 400px;
+}
+
+.descricaoEcopontos {
+  text-align: center;
+  font-size: 24px;
+  padding: 0px 120px;
+  color: #417a4a;
+}
