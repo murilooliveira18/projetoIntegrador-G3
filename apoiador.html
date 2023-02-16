@@ -148,6 +148,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 <script>
+
 const nome = document.getElementById("nome")
 const doc = document.getElementById("doc")
 const contato = document.getElementById("contato")
@@ -189,7 +190,6 @@ function removeError(index){
     spans[index].style.display = 'none';
 }
 
-
 function nameValidate(){
     if (campos[0].value.length < 6) 
     {
@@ -206,21 +206,20 @@ function docValidate(){
     {
         setError(1);
         inputsCorretos.doc = false
-    } else {
-        removeError(1);
-        inputsCorretos.doc = true
-        
     }
 }
+
 
 function contatoValidate(){
     if(campos[2].value.length <= 0) 
     {
         setError(2);
         inputsCorretos.contato = false
+
     } else {
         removeError(2);
         inputsCorretos.contato = true
+
     }
 }
 
@@ -229,10 +228,12 @@ function emailValidate(){
     {
         setError(3);
         inputsCorretos.email = false
+
     }
     else {
         removeError(3);
-        inputsCorretos.contato = true
+        inputsCorretos.email = true
+
     }
 }
 
@@ -241,22 +242,23 @@ function cidadeValidate(){
     {
         setError(4);
         inputsCorretos.cidade = false
+
     } else {
         removeError(4);
         inputsCorretos.cidade = true
+
     }
 }
 
-
 const submitb = document.getElementById('submit')
 const inputsCorretos = {
-  nome: false,
-  doc: false,
-  contato: false,
-  email:false,  
-  cidade: false,
-}
+    nome: false,
+    doc: false,
+    contato: false,
+    email: false,
+    cidade: false, 
 
+}
 
 submitb.addEventListener('click', (e) => {
   e.preventDefault()
