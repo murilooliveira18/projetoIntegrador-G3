@@ -64,7 +64,7 @@
                     <label for="contato">
                         DDD + CELULAR
                     </label><br>
-                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" oninput="contatoValidate()">
+                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required" oninput="contactValidate()">
                     <br>
                     <span class="span-required"> Informe um número para contato  </span>
                 </div>
@@ -80,7 +80,7 @@
                     <label for="cidade">
                         CIDADE
                     </label><br>
-                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required" oninput="cidadeValidate()">
+                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required" oninput="cityValidate()">
                     <br>
                     <span class="span-required"> Necessário cadastrar cidade </span>
                 </div>    
@@ -146,6 +146,123 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+<script>
+
+const nome = document.getElementById('nome')
+const doc = document.getElementById('doc')
+const contato = document.getElementById('contato')
+const email = document.getElementById('email')
+const cidade = document.getElementById('cidade')
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+function resetForm(){
+    nome.value = '';
+    doc.value = '';
+    contato.value = '';
+    email.value = '';
+    cidade.value= '';
+}
+
+function checkInputs() {
+    nameValidate();
+    docValidate();
+    contactValidate();
+    emailValidate();
+    cityValidate();
+}
+
+function setError(index){
+    campos[index].style.border='3px solid #c63636';
+    spans[index].style.display = 'block';
+}
+
+function removeError(index){
+    campos[index].style.border='';
+    spans[index].style.display = 'none';
+}
+
+function nameValidate(){
+    if (campos[0].value.length < 6) 
+    {
+        setError(0);
+        inputsCorretos.nome = false
+    } else {
+        removeError(0);
+        inputsCorretos.nome = true
+    }
+}
+
+function docValidate(){
+    if((campos[1].value.length !=11) && (campos[1].value.length !=14 ))
+    {
+        setError(1);
+        inputsCorretos.doc = false
+    } else {
+        removeError(1);
+        inputsCorretos.doc = true
+}
+}
+
+function contactValidate(){
+    if(campos[2].value.length <= 0) 
+    {
+        setError(2);
+        inputsCorretos.contato = false
+    } else {
+        removeError(2);
+        inputsCorretos.contato = true
+    }
+}
+
+function emailValidate(){
+    if(!emailRegex.test(campos[3].value))
+    {
+        setError(3);
+        inputsCorretos.email = false
+    }
+    else {
+        removeError(3);
+        inputsCorretos.email = true
+    }
+}
+
+function cityValidate(){
+    if(campos[4].value.length <= 0)
+    {
+        setError(4);
+        inputsCorretos.cidade = false
+    } else {
+        removeError(4);
+        inputsCorretos.cidade = true
+    }
+}
+
+const submitb = document.getElementById('submit')
+const inputsCorretos = {
+    nome: false,
+    doc: false,
+    contato: false,
+    email: false,
+    cidade: false, 
+}
+
+submitb.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    const values = Object.values(inputsCorretos)
+    const inputFalse = values.filter((value) => value === false)
+
+    if(!inputFalse.length) {
+    alert("Parabéns! ^^ Formulário enviado com sucesso!")
+    resetForm()
+  } else {
+    checkInputs()
+    alert("Preencha  os campos corretamente e Tente Novamente.")
+  }
+})
 
 </script>
 </html>
