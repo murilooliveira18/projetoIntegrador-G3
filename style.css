@@ -453,12 +453,29 @@ img.iconesRedeSocial {
   background: #166123;
 }
 
-.imagemParceria {
+.div_imagemParceria {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  margin: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 98%;
+  height: 460px;
+  background-image: url('imagens/floresta.jpg');
+  background-size: cover;
+  filter: blur(0.3px);
 }
+
+
+.txt-Parceria{
+display: flex;
+justify-content: center;
+text-align: center;
+padding: 10px;
+margin: 20px;
+color:white;
+text-shadow: -3px 5px 3px black;
+}
+
 
 .div-imagemTopo {
   display: flex;
