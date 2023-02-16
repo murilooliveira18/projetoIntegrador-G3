@@ -93,36 +93,38 @@
                 <img src="imagens/newletter.jpg" alt="newletter" class="New" >
             </div>
             <div>
+                <form action="">
                 <div>
                     <h1 class="tituloNovidades">
-                        INSCREVA SE <br> EM NOSSA NEWSLETTER
+                        INSCREVA-SE <br> EM NOSSA NEWSLETTER
                     </h1>                
                 </div>
                 <div>
                     <div class="fale">
-                        <label for="nome">
+                        <label for="nomeinscreva">
                             NOME:
                         </label>
                     <br>
-                    <input type="text" placeholder="Digite seu nome" id="nome" name="username" class="escrever required" oninput=" nameValidate(0)">
+                    <input type="text" placeholder="Digite seu nome" id="nomeinscreva" name="username" class="escrever required" oninput=" nomeinscrevaValidate(0)">
                     <br>
-                    <span class="span-required"> * Nome deve conter no mínimo 3 caracteres * </span>
+                    <span class="span-required2"> * Nome deve conter no mínimo 3 caracteres * </span>
                     </div>
                     <div class="fale">
-                        <label for="email">
+                        <label for="emailinscreva">
                             E-MAIL:
                         </label><br>
-                    <input type="email" placeholder="Digite seu Melhor E-Mail" id="email" name="mailto" class="escrever required">
+                    <input type="email" placeholder="Digite seu Melhor E-Mail" id="emailinscreva" name="mailto" class="escrever required" oninput=" emailinscrevaValidate()">
                     <br>
-                    <span class="span-required"> * Digite um email válido * </span>
+                    <span class="span-required2"> * Digite um email válido * </span>
                     </div>
                     <div class="div_formBotao">
-                        <button type="submit" id="submit"  class="formBotao">
+                        <button type="submit2" id="submit2"  class="formBotao">
                             ENVIAR
                         </button>
                     </div>
                 </div>
             </div>
+        </form>
         </div>
 
         <h1 class="tituloEmpresas">
@@ -175,94 +177,108 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 <script>
-const nome = document.getElementById("nome")
-const contato = document.getElementById("contato")
-const email = document.getElementById("email")
-const assunto = document.getElementById("assunto")
-const menssagem = document.getElementById("msg")
-
-const form = document.getElementById("submit");
-const campos = document.querySelectorAll(".required");
-const spans = document.querySelectorAll(".span-required");
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
 
+// Increva-se em nossa newsletter
+
+const nomeinscreva = document.getElementById("nomeinscreva")
+const emailinscreva = document.getElementById("emailinscreva")
+
+const form2 = document.getElementById("submit2");
+const campos2 = document.querySelectorAll(".required");
+const spans2 = document.querySelectorAll(".span-required2");
+const submitButton2 = document.getElementById('submit2');
+const emailRegex2 = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+
+
+function resetForm2(){
+    nomeinscreva.value = '';
+    emailinscreva.value = '';
+}
     
-function checkInputs(){
-    nameValidate();
-    contatoValidate();
-    emailValidate();
-    assuntoValidate();
-    msgValidate();
+function checkInputs2() {
+    nomeinscrevaValidate();
+    emailinscrevaValidate();
+    
+}
+
+function validateForm2 () {
+    inputAll.values !== ""
+
+    if(!inputAll.values){
+        console.log('ok')
+    } else {
+        console.log('error')
+    }
 }
 
 
-form.addEventListener("click", (e) => {
+submitButton2.addEventListener ("click", (e)=> {
     e.preventDefault();
-    checkInputs();
-    
-});
+    checkInputs2();
+    validateForm2();
+    resetForm2();
+})
+ 
 
-
-
-function setError(index){
-    campos[index].style.border='3px solid #c63636';
-    spans[index].style.display = 'block';
+function setError2(index){
+    campos2[index].style.border='3px solid #c63636';
+    spans2[index].style.display = 'block';
 }
 
-function removeError(index){
-    campos[index].style.border='';
-    spans[index].style.display = 'none';
+function removeError2(index){
+    campos2[index].style.border='';
+    spans2[index].style.display = 'none';
 }
 
 
-
-function nameValidate(index) {
-    if (campos[0].value.length < 3) 
+function nomeinscrevaValidate(){
+    if (campos2[0].value.length < 6) 
     {
-        setError(0);
+        setError2(0);
+        inputsCorretos2.nomeinscreva = false
+        
     } else {
-        removeError(0);
+        removeError2(0);
+        inputsCorretos2.nomeinscreva = true
+        
     }
 }
 
-function contatoValidate(){
-    if(campos[1].value.length <= 0) 
+function emailinscrevaValidate(){
+    if(!emailRegex2.test(campos2[1].value))
     {
-        setError(1);
-    } else {
-        removeError(1);
-    }
-}
-
-function emailValidate(index){
-    if(!emailRegex.test(campos[2].value))
-    {
-        setError(2);
+        setError2(1);
+        inputsCorretos2.emailinscreva = false
     }
     else {
-        removeError(2);
+        removeError2(1);
+        inputsCorretos2.emailinscreva = true
     }
 }
 
-function assuntoValidate() {
-    if (campos[3].value.length < 3) 
-    {
-        setError(3);
-    } else {
-        removeError(3);
-    }
+// / HABILITAR ENVIO DE FORMULÁRIO
+
+const submitb = document.getElementById('submit2')
+const inputsCorretos2 = {
+  nomeinscreva: false,
+  emailinscreva: false,  
+
 }
 
-function msgValidate(){
-    if (campos[4].value.length < 10) 
-    {
-        setError(4);
-    } else {
-        removeError(4);
-    }
-}
+submitb.addEventListener('click', (e) => {
+  e.preventDefault()
+  const values = Object.values(inputsCorretos2)
+  const anyFalse = values.filter((value) => value === false)
 
+  if(!anyFalse.length) {
+    alert('Formulário enviado com sucesso!')
+  } else (
+    alert('Preencha todos os campos')
+  )
+  
+})
 
 
 
