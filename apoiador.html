@@ -157,6 +157,9 @@ const cidade = document.getElementById("cidade")
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const submitButton = document.getElementById('submit');
+const inputAll = document.querySelectorAll("input");
+
 
 function resetForm(){
     nome.value = '';
@@ -176,6 +179,28 @@ function checkInputs() {
 }
 
 
+function validateForm () {
+    inputAll.values !== ""
+
+    if(!inputAll.values){
+        console.log('ok')
+    } else {
+        console.log('error')
+    }
+}
+
+
+submitButton.addEventListener ("click", (e)=> {
+    e.preventDefault();
+    checkInputs();
+    validateForm();
+    resetForm();
+})
+ 
+  
+
+
+
 
 function setError(index){
     campos[index].style.border='3px solid #c63636';
@@ -192,11 +217,9 @@ function nameValidate(){
     if (campos[0].value.length < 6) 
     {
         setError(0);
-        inputsCorretos.nome = false
         
     } else {
         removeError(0);
-        inputsCorretos.nome = true
         
     }
 }
@@ -205,17 +228,17 @@ function docValidate(){
     if((campos[1].value.length !=11) && (campos[1].value.length !=14 ))
     {
         setError(1);
-        inputsCorretos.doc = false
+        inputsCorretos.contato = false
         
     } else {
         removeError(1);
-        inputsCorretos.doc = true
+        inputsCorretos.contato = false
         
     }
 }
 
 function contatoValidate(){
-    if((campos[2].value.length != 10) &&  (campos[2].value.length !=11))
+    if(campos[2].value.length <= 0) 
     {
         setError(2);
         inputsCorretos.contato = false
@@ -233,7 +256,7 @@ function emailValidate(){
     }
     else {
         removeError(3);
-        inputsCorretos.email = true
+        inputsCorretos.contato = true
     }
 }
 
@@ -248,6 +271,7 @@ function cidadeValidate(){
     }
 }
 
+// / HABILITAR ENVIO DE FORMULÁRIO
 
 const submitb = document.getElementById('submit')
 const inputsCorretos = {
@@ -258,18 +282,22 @@ const inputsCorretos = {
   cidade: false,
 }
 
+
 submitb.addEventListener('click', (e) => {
   e.preventDefault()
   const values = Object.values(inputsCorretos)
   const anyFalse = values.filter((value) => value === false)
 
   if(!anyFalse.length) {
-    alert("Obrigado(a) ^^ Formulário enviado com sucesso!")
-    resetForm()
-  } else {
-    checkInputs()
-    alert("Ops...Algo deu errado =/ Preencha os campos corretamente")
-  }
+    alert('Formulário enviado com sucesso!')
+  } else (
+    alert('Preencha todos os campos')
+  )
+  
 })
+
+
+
+
 </script>
 </html>
